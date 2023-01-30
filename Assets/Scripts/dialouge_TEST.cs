@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Bubbles
@@ -31,10 +32,10 @@ public class dialouge_TEST : MonoBehaviour
     bool isBolded = false;
     bool isUnderlined = false;
     bool isStrikeThrough = false;
-    bool isSentenceFilledIn = false;
+    public bool isSentenceFilledIn = false;
     public bool isChoiceAnswered = true;
 
-
+    public GameObject blackScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -193,7 +194,31 @@ public class dialouge_TEST : MonoBehaviour
                     // skip the name and '>' part of the sentence
                     charCount += substringLength;
                 }
+                // pauses/unpauses advancing TextBox 
+                else if ((sentence.Length - charCount) >= 15 && sentence.Substring(charCount, 15) == "<pauseDialouge>")
+                {
+                    // skip the '<pauseDialouge>' part of the sentence from displaying in the textbox
+                    charCount += 15;
 
+                    if (!isChoiceAnswered)
+                    { isChoiceAnswered = true; }
+                    else if (isChoiceAnswered)
+                    { isChoiceAnswered = false; }
+
+                }
+                // End's dialouge 
+                else if ((sentence.Length - charCount) >= 5 && sentence.Substring(charCount, 5) == "<END>")
+                {
+                    // skip the '<END>' part of the sentence from displaying in the textbox
+                    charCount += 5;
+
+                    blackScreen.SetActive(true);
+                    yield return new WaitForSeconds(8);
+                    SceneManager.LoadScene(0);
+
+
+                }
+                
                 else if ((sentence.Length - charCount) >= 8 && sentence.Substring(charCount, 8) == "<choice>")
                 {
                     isChoiceAnswered = false;
