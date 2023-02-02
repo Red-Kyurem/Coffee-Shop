@@ -75,7 +75,7 @@ public class MousePickup : MonoBehaviour
                 SelectedGM.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Mouse_Position.x, Mouse_Position.y, Camera.main.transform.position.z+ SelectedGMForwardOffset));
             }
 
-            Debug.DrawRay(ray.origin, ray.direction * 25, Color.red);
+            //Debug.DrawRay(ray.origin, ray.direction * 25, Color.red);
 
         }
     }
