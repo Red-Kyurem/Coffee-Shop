@@ -7,6 +7,8 @@ public class CameraMovement : MonoBehaviour
     Camera mainCamera;
     public Vector3 startPos = new Vector3(0, 2, 0.1f);
     public Vector3 endPos;
+    public float minRotationX = 0;
+    public float maxRotationX = 15;
     public float speed;
 
     public float screenFrameBorderPercentage = 0.1f;
@@ -32,5 +34,14 @@ public class CameraMovement : MonoBehaviour
         {
             mainCamera.transform.position += Vector3.right * 1 * Time.deltaTime * speed;
         }
+
+        /*if (mainCamera.transform.rotation.x < maxRotationX && Input.mousePosition.y < mainCamera.scaledPixelHeight * screenFrameBorderPercentage)
+        {
+            mainCamera.transform.rotation *= Quaternion.Euler(maxRotationX * Time.deltaTime * speed, 0, 0);
+        }
+        else if (mainCamera.transform.rotation.x > minRotationX && Input.mousePosition.y > mainCamera.scaledPixelHeight - (mainCamera.scaledPixelHeight * screenFrameBorderPercentage))
+        {
+            mainCamera.transform.rotation *= Quaternion.Euler(1 * Time.deltaTime * speed, 0, 0);
+        }*/
     }
 }
