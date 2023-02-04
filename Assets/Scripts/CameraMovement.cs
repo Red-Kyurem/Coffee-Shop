@@ -23,8 +23,6 @@ public class CameraMovement : MonoBehaviour
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         Debug.DrawRay(ray.origin, ray.direction, Color.green);
-        Debug.Log("Distance between PixelWidth (1): " + (mainCamera.scaledPixelWidth * screenFrameBorderPercentage) + ", " + Input.mousePosition.x);
-        Debug.Log("Distance between PixelWidth (2): " + (mainCamera.scaledPixelWidth - (mainCamera.scaledPixelWidth * screenFrameBorderPercentage)) + ", " + Input.mousePosition.x);
 
         if (startPos.x < mainCamera.transform.position.x && Input.mousePosition.x < mainCamera.scaledPixelWidth * screenFrameBorderPercentage)
         {

@@ -86,7 +86,7 @@ public class MousePickup : MonoBehaviour
         selectedPos.z = 0;
         MouseWorldPosition.z = 0;
         rb.velocity = (MouseWorldPosition - selectedPos).normalized * ((MouseWorldPosition - selectedPos).magnitude / Time.deltaTime / 5);
-
+        rb.velocity = Vector3.zero;
         SelectedGM = null;
     }
 }

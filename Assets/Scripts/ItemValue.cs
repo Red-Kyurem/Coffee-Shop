@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class ItemValue : MonoBehaviour
 {
-    public int orderNum = 0;
+    public string orderString = "";
 
 }

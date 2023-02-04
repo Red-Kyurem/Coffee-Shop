@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TouchManager : MonoBehaviour
 {
-    public List<GameObject> PickupRecievers;
+    public List<GameObject> PickupReciever;
+    correctOrder correctOrderScript;
     // Start is called before the first frame update
     void Start()
     {
-        
+        correctOrderScript = GetComponent<correctOrder>();
     }
 
     // Update is called once per frame
@@ -33,19 +34,45 @@ public class TouchManager : MonoBehaviour
 
                 if (hit.collider.tag == "ConfirmOrder" && dialougeScript.isSentenceFilledIn == true)
                 {
-                    if (PickupRecievers[0].GetComponent<PickupReciever>().ObjectRecieved != null && PickupRecievers[0].GetComponent<PickupReciever>().ObjectRecieved.GetComponent<ItemValue>().orderNum == GameObject.FindGameObjectWithTag("ConfirmOrder").GetComponent<correctOrder>().orderNums[0]
-                    && PickupRecievers[1].GetComponent<PickupReciever>().ObjectRecieved != null && PickupRecievers[1].GetComponent<PickupReciever>().ObjectRecieved.GetComponent<ItemValue>().orderNum == GameObject.FindGameObjectWithTag("ConfirmOrder").GetComponent<correctOrder>().orderNums[1]
-                    && PickupRecievers[2].GetComponent<PickupReciever>().ObjectRecieved != null && PickupRecievers[2].GetComponent<PickupReciever>().ObjectRecieved.GetComponent<ItemValue>().orderNum == GameObject.FindGameObjectWithTag("ConfirmOrder").GetComponent<correctOrder>().orderNums[2])
+                    List<string> cupIngredientStrings = GetComponent<PickupReciever>().ObjectRecieved.GetComponent<CupContents>().ingredientStrings;
+                    List<string> orderIngredientStrings = correctOrderScript.orderStrings;
+                    bool isCupCorrect = true;
+
+                    if (orderIngredientStrings.Count != cupIngredientStrings.Count)
+                    {
+                        isCupCorrect = false;
+                    }
+                    
+
+                    int orderLength = orderIngredientStrings.Count;
+                    int cupLength = cupIngredientStrings.Count;
+
+                    orderIngredientStrings.Sort();
+                    cupIngredientStrings.Sort();
+
+                    
+                    for (int IngredientIndex = 0; IngredientIndex < orderLength; IngredientIndex++)
+                    {
+                        if (orderIngredientStrings[IngredientIndex] != cupIngredientStrings[IngredientIndex])
+                        {
+                            isCupCorrect = false;
+                        }
+                        if (!isCupCorrect) { break; }
+                    }
+                    
+
+                    if (isCupCorrect)
                     {
                         Debug.Log("Correct!");
-                        
+
                         dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName("<\\BUBBLE>CorrectOrder"));
                     }
-                    else
+                    else 
                     {
                         Debug.Log("INcorrect!");
                         dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName("<\\BUBBLE>IncorrectOrder"));
                     }
+                    
 
                 }
                 else if (hit.collider.tag == "RestartOrder")
