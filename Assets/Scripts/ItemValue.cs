@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ItemValue : MonoBehaviour
 {
-    public string orderString = "";
+    public string IngredientString = "";
 
+
+
+    void Start()
+    {
+        
+    }
 }

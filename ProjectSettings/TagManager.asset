@@ -11,6 +11,8 @@ TagManager:
   - ConfirmOrder
   - RestartOrder
   - SpawnItem
+  - Cup
+  - In-Game Button
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Water
   - UI
   - PickupableObject
-  - 
+  - In-Game Button
   - 
   - 
   - 

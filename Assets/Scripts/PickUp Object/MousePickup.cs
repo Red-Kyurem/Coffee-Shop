@@ -26,7 +26,9 @@ public class MousePickup : MonoBehaviour
     {
         if (canPickUp)
         {
-            LayerMask layerMask = 1 << 6;
+            LayerMask pickupLayerMask = 1 << 6;
+            LayerMask buttonLayerMask = 1 << 7;
+
             Mouse_Position = Input.mousePosition;
             Mouse_Position.z = Camera.main.nearClipPlane;
             MouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Mouse_Position.x, Mouse_Position.y, 0));
@@ -34,12 +36,14 @@ public class MousePickup : MonoBehaviour
 
             // World_Position
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit Hit;
+            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out Hit, 1000, layerMask) && SelectedGM == null)
+            if (Physics.Raycast(ray, out hit, 1000, pickupLayerMask) && SelectedGM == null)
             {
+                Debug.Log("pickup!!!");
+                HighlightedGM = hit.transform.gameObject;
 
-                HighlightedGM = Hit.transform.gameObject;
+                // if mouse is hovering over and gameobject is clicked on, then pick up gameobject
                 if (HighlightedGM.GetComponent<PickupableObject>() && Input.GetMouseButton(0))
                 {
                     if (HighlightedGM.GetComponent<PickupableObject>().canBePickedUp)
@@ -47,9 +51,14 @@ public class MousePickup : MonoBehaviour
                         SelectedGM = HighlightedGM;
                         HighlightedGM = null;
                         rb = SelectedGM.GetComponent<Rigidbody>();
-
+                        SelectedGM.GetComponent<PickupableObject>().isPickedUp = true;
+                        if (SelectedGM.GetComponent<CupContents>())
+                        {
+                            SelectedGM.GetComponent<CupContents>().ResetInGameButtons();
+                        }
                     }
                 }
+                
                 else if (HighlightedGM.GetComponent<PickupableObject>())
                 {
                     HighlightedGM = null;
@@ -57,6 +66,7 @@ public class MousePickup : MonoBehaviour
             }
             else
             {
+                // if gameobject is not clicked on, then drop gameobject
                 HighlightedGM = null;
                 if (Input.GetMouseButtonUp(0) && SelectedGM != null)
                 {
@@ -65,17 +75,21 @@ public class MousePickup : MonoBehaviour
                 }
             }
 
+            if (Physics.Raycast(ray, out hit, 1000, buttonLayerMask) && Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("PRESSED!!!");
+                hit.transform.gameObject.GetComponent<ButtonAddIngredient>().AddIngredient();
+            }
 
 
-
-
+            // when the selected gameobject is picked up
             if (SelectedGM != null && SelectedGM.GetComponent<PickupableObject>())
             {
                 rb.velocity = Vector3.zero;
                 SelectedGM.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Mouse_Position.x, Mouse_Position.y, Camera.main.transform.position.z+ SelectedGMForwardOffset));
             }
 
-            //Debug.DrawRay(ray.origin, ray.direction * 25, Color.red);
+            Debug.DrawRay(ray.origin, ray.direction * 25, Color.red);
 
         }
     }
@@ -87,6 +101,7 @@ public class MousePickup : MonoBehaviour
         MouseWorldPosition.z = 0;
         rb.velocity = (MouseWorldPosition - selectedPos).normalized * ((MouseWorldPosition - selectedPos).magnitude / Time.deltaTime / 5);
         rb.velocity = Vector3.zero;
+        SelectedGM.GetComponent<PickupableObject>().isPickedUp = false;
         SelectedGM = null;
     }
 }

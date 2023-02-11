@@ -22,7 +22,7 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawRay(ray.origin, ray.direction, Color.green);
+        //Debug.DrawRay(ray.origin, ray.direction, Color.green);
 
         if (startPos.x < mainCamera.transform.position.x && Input.mousePosition.x < mainCamera.scaledPixelWidth * screenFrameBorderPercentage)
         {

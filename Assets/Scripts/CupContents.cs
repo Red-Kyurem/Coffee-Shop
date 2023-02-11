@@ -16,4 +16,13 @@ public class CupContents : MonoBehaviour
     {
         
     }
+
+    public void ResetInGameButtons()
+    {
+        GameObject[] buttons = GameObject.FindGameObjectsWithTag("In-Game Button");
+        for (int i = 0; i< buttons.Length; i++)
+        {
+            buttons[i].GetComponent<ButtonAddIngredient>().cup = null;
+        }
+    }
 }

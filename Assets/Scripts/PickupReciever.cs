@@ -8,6 +8,7 @@ public class PickupReciever : MonoBehaviour
     public GameObject ObjectRecieved;
     public List<ObjectType> placeableObjectTypes;
     public Vector3 objectOffset;
+    public GameObject[] buttons;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,19 +24,35 @@ public class PickupReciever : MonoBehaviour
     {
         PickupableObject otherPO = other.gameObject.GetComponent<PickupableObject>();
         Debug.Log(other.name);
-        bool canCompareObj = false;
         
 
 
-            if (other.gameObject.tag == "PickupableObject" && 
-            otherPO.isPickedUp == false && 
-            canCompareObject(placeableObjectTypes, otherPO.objectType))
+        if (other.gameObject.tag == "PickupableObject" && otherPO.isPickedUp == false && canCompareObject(placeableObjectTypes, otherPO.objectType))
+        {
+            if (otherPO.objectType == ObjectType.Cup)
             {
                 other.transform.position = transform.parent.position + objectOffset;
                 //other.GetComponent<Rigidbody>().useGravity = false;
                 other.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 ObjectRecieved = other.gameObject;
+
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].GetComponent<ButtonAddIngredient>().cup = other.gameObject;
+                }
             }
+            else if (otherPO.objectType == ObjectType.Milk)
+            {
+                other.transform.position = otherPO.startingLocation;
+                other.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            }
+
+            if (transform.parent && transform.parent.gameObject.GetComponent<CupContents>())
+            {
+                transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings.Add(other.gameObject.GetComponent<ItemValue>().IngredientString);
+            }
+
+        }
         
 
     }
