@@ -27,6 +27,8 @@ public class dialouge_TEST : MonoBehaviour
 
     public TMP_Text dialogTextBox;
     public TMP_Text nameTextBox;
+    public GameObject dialogTextBoxImage;
+    public GameObject nameTextBoxImage;
 
     bool isItalic = false;
     bool isBolded = false;
@@ -34,6 +36,7 @@ public class dialouge_TEST : MonoBehaviour
     bool isStrikeThrough = false;
     public bool isSentenceFilledIn = false;
     public bool isChoiceAnswered = true;
+    public bool hideTextBox = false;
 
     public GameObject blackScreen;
     // Start is called before the first frame update
@@ -206,6 +209,26 @@ public class dialouge_TEST : MonoBehaviour
                     { isChoiceAnswered = false; }
 
                 }
+                // hides/unhides TextBox 
+                else if ((sentence.Length - charCount) >= 12 && sentence.Substring(charCount, 12) == "<toggleHide>")
+                {
+                    // skip the '<toggleHide>' part of the sentence from displaying in the textbox
+                    charCount += 12;
+
+                    if (!hideTextBox)
+                    { 
+                        hideTextBox = true;
+                        dialogTextBoxImage.SetActive(false);
+                        nameTextBoxImage.SetActive(false);
+                    }
+                    else if (hideTextBox)
+                    { 
+                        hideTextBox = false;
+                        dialogTextBoxImage.SetActive(true);
+                        nameTextBoxImage.SetActive(true);
+                    }
+
+                }
                 // End's dialouge 
                 else if ((sentence.Length - charCount) >= 5 && sentence.Substring(charCount, 5) == "<END>")
                 {
@@ -243,7 +266,7 @@ public class dialouge_TEST : MonoBehaviour
                     // finds the length and text of the next bubble's name
                     int bubbleSubstringLength = FindNextChar(sentence, ']', 2 + choiceNameLength);
                     string bubbleName = sentence.Substring(charCount + choiceNameLength + 1, bubbleSubstringLength - 1);
-                    Debug.Log("bubbleName: " + bubbleName);
+                    //Debug.Log("bubbleName: " + bubbleName);
 
                     // checks each bubble stored in the bubbles list for a matching bubble name
                     sentenceLinePlace = CheckForMatchingBubbleName(bubbleName);
@@ -283,10 +306,10 @@ public class dialouge_TEST : MonoBehaviour
         for (int choiceNum = 0; choiceNum < totalChoices; choiceNum++)
         {
             int choiceNameLength = FindNextChar(sentences[linePlace + choiceNum], '|', 2);
-            Debug.Log(sentences[linePlace + choiceNum].Substring(2, choiceNameLength));
+            //Debug.Log(sentences[linePlace + choiceNum].Substring(2, choiceNameLength));
             // finds the length and text of the next bubble's name
             int bubbleSubstringLength = FindNextChar(sentences[linePlace + choiceNum], ']', 2 + choiceNameLength);
-            Debug.Log("bubble Substring Length: " + bubbleSubstringLength);
+            //Debug.Log("bubble Substring Length: " + bubbleSubstringLength);
             
 
             GameObject button = Instantiate(choiceButton, buttonPos);
@@ -299,10 +322,10 @@ public class dialouge_TEST : MonoBehaviour
 
             RectTransform buttonRect = button.GetComponent<RectTransform>();
             button.transform.localPosition = (transform.up * (float)((buttonRect.sizeDelta.y * totalChoices) / 2) - (transform.up * buttonRect.sizeDelta.y * (float)choiceNum));
-            Debug.Log("total Choices: " + totalChoices);
-            Debug.Log("choice Num: " + choiceNum);
+            //Debug.Log("total Choices: " + totalChoices);
+            //Debug.Log("choice Num: " + choiceNum);
         }
-        Debug.Log(totalChoices + " option(s) detected!");
+        //Debug.Log(totalChoices + " option(s) detected!");
         if (totalChoices <= 1)
         {
             DestroyChoiceButtons(buttonPos.childCount);
