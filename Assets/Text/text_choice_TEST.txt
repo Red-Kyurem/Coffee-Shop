@@ -57,24 +57,10 @@ exiting through a panel in the floor, getting rid of the excess weight.
 As you're wiping down the counter, you hear an odd squeaking noise coming from the store front. Looking up, you watch as a grotesque looking machine carrying a fetus bumps into the stools and
 makes its way to the counter.
 A loud whirring noise is heard as the fetus appears to speak, though no words can be heard from the fetus itself. After a couple of moments, a voice that couldn't be described as human is heard.
-<name=???>"You there. Heed this one known as Felix's order. One requires your finest bean soup in cup format."  <choice> 
+<name=???>"You there. Heed this one known as Felix's order. One requires your finest bean soup in cup format."<choice> 
 [["You mean coffee?"|<\BUBBLE>"You mean coffee?"]]
 [["Why certainly, what type of bean soup could I get for you?"|<\BUBBLE>"Why certainly, what type of bean soup could I get for you?"]]
 [["I don't work here" |<\BUBBLE>"I don't work here."]]
-=======
-Alright fine I'll repeat myself.
-[[not really...|<\BUBBLE>Continue1]]
-// 
-<\BUBBLE>Continue2
-now make me some tea with vanilla syrup and milk foam, got it?
-<toggleHide><pauseDialouge>
-//
-<\BUBBLE>CorrectOrder
-<pauseDialouge> Looks good to me.
-alright, buddy. looks to me like you can handle your first shift.
-Good luck.
-<END>
->>>>>>> c7f2eb1e260a17515b2d97b2929a1a58941249a8
 //
 <\BUBBLE>"You mean coffee?"
 <name=>The fetus seems unamused.
@@ -143,13 +129,13 @@ Suddenly, you see what looks like a dog with a hat sitting at the counter. Looki
 <name=>The dog appears frightened for a moment, leaving the counter and backing up towards the door.
 "I was never here."
 You get the feeling you've said something you weren't supposed to.
-[[<\BUBBLE>Day 3]]
+[[Day 3|<\BUBBLE>Day 3]]
 <\BUBBLE>"Nah, just feeling a little tired thats all."
 "Ah. Well it is late at night, so I cannot fault your tiredness."
 "Well, in any case, I've got my drink, I think I'll be heading out now."
 <name=>The dog leaves the counter and begins to walk towards the door.
 You get the feeling he'll be back.
-[[<\BUBBLE>Day 3]]
+[[Day 3|<\BUBBLE>Day 3]]
 <\BUBBLE>"But of course, he's one of our regulars!"
 <name=>The old man squints while looking at your face before clearing his throat.
 <name=Gramps>"I've been in this business for a long time and I can tell when somebody is lying. If you haven't seem him then theres really no need to humor me."
@@ -184,16 +170,16 @@ What a strange encounter.
 <name=>The old man's eyes widen once again
 <name=Gramps>"Ah yes, this is most definitely the drink I have ordered!"
 <name=>He takes the drink, taking a moment to smell it before bringing it to his lips.
-<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?" <choice>
-[[<\BUBBLE>"Can't say I have."]]
-[[<\BUBBLE>"But of course, he's one of our regulars!"]]
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+[["Can't say I have."|<\BUBBLE>"Can't say I have."]]
+[["But of course, he's one of our regulars!"|<\BUBBLE>"But of course, he's one of our regulars!"]]
 <\BUBBLE>Serve Incorrect 2
 <name=>The old man narrows his eyes before looking directly at you.
 He reaches into his coat pocket and removes a large pocketwatch, before putting it away.
 He takes the drink, taking a moment to smell it before bringing it to his lips.
-<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?" <choice>
-[[<\BUBBLE>"Can't say I have."]]
-[[<\BUBBLE>"But of course, he's one of our regulars!"]]
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+[["Can't say I have."|<\BUBBLE>"Can't say I have."]]
+[["But of course, he's one of our regulars!"|<\BUBBLE>"But of course, he's one of our regulars!"]]
 <\BUBBLE>Serve Correct 3
 The dog begins to aggressively drink the glass of water before looking back up at you
 <name=Benedict>"That does indeed hit the spot."
