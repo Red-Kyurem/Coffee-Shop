@@ -57,7 +57,7 @@ exiting through a panel in the floor, getting rid of the excess weight.
 As you're wiping down the counter, you hear an odd squeaking noise coming from the store front. Looking up, you watch as a grotesque looking machine carrying a fetus bumps into the stools and
 makes its way to the counter.
 A loud whirring noise is heard as the fetus appears to speak, though no words can be heard from the fetus itself. After a couple of moments, a voice that couldn't be described as human is heard.
-<name=???>"You there. Heed this one known as Felix's order. One requires your finest bean soup in cup format."<choice> 
+<name=???>"You there. Heed this one known as Felix's order. One requires your finest bean soup in cup format."  <choice> 
 [["You mean coffee?"|<\BUBBLE>"You mean coffee?"]]
 [["Why certainly, what type of bean soup could I get for you?"|<\BUBBLE>"Why certainly, what type of bean soup could I get for you?"]]
 [["I don't work here" |<\BUBBLE>"I don't work here."]]
@@ -68,19 +68,19 @@ A loud whirring noise is heard as the fetus appears to speak, though no words ca
 <name=>You can't help but notice that the fetus seems to be speaking slower to you.
 As if detecting your notice, the fetus speaks once again.
 <name=Felix>"If it wasn't already obvious, this One has chosen to speak slower in order to your brain function to keep up, since you don't appear to be the sharpest barista."
-<name=>You feel a little offended, a little hurt, but you still have a job to do.<choice>
+<name=>You feel a little offended, a little hurt, but you still have a job to do. <choice>
 [[Serve Correct 1|<\BUBBLE> Serve Correct 1]]
 [[Serve Incorrect 1 |<BUBBLE> Serve Incorrect 1]]
 <\BUBBLE>"Why certainly, what type of bean soup could I get for you?"
 <name=>The fetus seems to swell with excitement
-<name=Felix>"FINALLY! Some proper service! One requires your finest @Espresso@ in order to operate at maximum effectiveness."<choice>
+<name=Felix>"FINALLY! Some proper service! One requires your finest @Espresso@ in order to operate at maximum effectiveness." <choice>
 [[Serve Correct 1|<\BUBBLE> Serve Correct 1]]
 [[Serve Incorrect 1 |<BUBBLE> Serve Incorrect 1]]
 <\BUBBLE>"I don't work here."
 <name=>The fetus appears as puzzled as it can possibly appear
 <name=Felix>"One is confused by this query. If you do not work at this establishment, then what could you possibly be doing behind the counter?"
 <name=>A couple seconds pass as the two of you lock eyes, before it speaks again.
-<name=Felix>"Regardless, One supposes it could have been a bit clearer. One requires an @Espresso@ in order to function at maximum effectiveness.<choice>
+<name=Felix>"Regardless, One supposes it could have been a bit clearer. One requires an @Espresso@ in order to function at maximum effectiveness. <choice>
 [[Serve Correct 1|<\BUBBLE> Serve Correct 1]]
 [[Serve Incorrect 1 |<BUBBLE> Serve Incorrect 1]]
 <\BUBBLE>Day 2
@@ -97,7 +97,7 @@ It would seem as though the old man has mistaken the cafe for a bar.
 <\BUBBLE>"Sir, this is a cafe. We serve coffee."
 <name=>The old man's eyes widen for a moment before he regains his composure
 <name=Gramps>"Ah, my mistake then. The style of this shop reminded me of one I visited in my youth so I assumed it sold alcohol."
-"In that case, I would request your finest ''Cappuccino''. Surely, an order as simple as that could be accomplished."<choice>
+"In that case, I would request your finest ''Cappuccino''. Surely, an order as simple as that could be accomplished." <choice>
 [[Serve Correct 2|<\BUBBLE>Serve Correct 2]]
 [[Serve Incorrect 2|<\BUBBLE>Serve Incorrect 2]]
 <\BUBBLE>"Can't say I have."
@@ -122,7 +122,7 @@ Suddenly, you see what looks like a dog with a hat sitting at the counter. Looki
 <name=>Generally, dogs don't speak, so you surmise that your tiredness is causing you to hallucinate. Nonetheless, you humor the hallucination and approach the counter.
 <name=Benedict>"Good evening. I understand its a strange order, especially at this time of night, but could I have a glass of water? I'm simply parched."
 <name=>Water is actually not much of a commodity these days, since its essentially fuel. As such, the order is quite strange. The dog might as well have asked for a glass of gasoline.
-<choice>
+ <choice>
 [[Serve Correct 3|<\BUBBLE>Serve Correct 3]]
 [[Serve Incorrect 3|<\BUBBLE>Serve Incorrect 3]]
 <\BUBBLE>"There was an old man looking for you"
@@ -170,20 +170,20 @@ What a strange encounter.
 <name=>The old man's eyes widen once again
 <name=Gramps>"Ah yes, this is most definitely the drink I have ordered!"
 <name=>He takes the drink, taking a moment to smell it before bringing it to his lips.
-<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?" <choice>
 [[<\BUBBLE>"Can't say I have."]]
 [[<\BUBBLE>"But of course, he's one of our regulars!"]]
 <\BUBBLE>Serve Incorrect 2
 <name=>The old man narrows his eyes before looking directly at you.
 He reaches into his coat pocket and removes a large pocketwatch, before putting it away.
 He takes the drink, taking a moment to smell it before bringing it to his lips.
-<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?" <choice>
 [[<\BUBBLE>"Can't say I have."]]
 [[<\BUBBLE>"But of course, he's one of our regulars!"]]
 <\BUBBLE>Serve Correct 3
 The dog begins to aggressively drink the glass of water before looking back up at you
 <name=Benedict>"That does indeed hit the spot."
-"I must say, your face does betray some form of puzzlement. Is something the matter?"<choice>
+"I must say, your face does betray some form of puzzlement. Is something the matter?" <choice>
 [["There was an old man looking for you.|<\BUBBLE>"There was an old man looking for you"]]
 [["Nah just feeling tired thats all."|<\BUBBLE>"Nah, just feeling a little tired thats all."]]
 <\BUBBLE>Serve Incorrect 3
