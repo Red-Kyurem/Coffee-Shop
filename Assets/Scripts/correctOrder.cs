@@ -59,7 +59,7 @@ public class correctOrder : MonoBehaviour
 
                 for (int IngredientIndex = 0; IngredientIndex < orderLength; IngredientIndex++)
                 {
-                    if (orderIngredientStrings[IngredientIndex] != cupIngredientStrings[IngredientIndex])
+                    if (cupLength > 0 && orderIngredientStrings[IngredientIndex] != cupIngredientStrings[IngredientIndex])
                     {
                         isCupCorrect = false;
                     }

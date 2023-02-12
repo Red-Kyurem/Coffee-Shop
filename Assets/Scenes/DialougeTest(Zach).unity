@@ -833,7 +833,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a212f1fabb61e004cb2c496545b20fb7, type: 2}
+  - {fileID: 2100000, guid: 87649ad137918c64fb7ff8d0b775f690, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -871,9 +871,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188806683}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2.5197167, z: 2.5197167}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -0.042, y: 0.80500007, z: 0}
+  m_LocalScale: {x: 1.4, y: 1.7516748, z: 1.7516748}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267327595}
   m_RootOrder: 0
@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267327594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49923468, y: 1.64, z: 3.42}
+  m_LocalPosition: {x: 0, y: 1, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1078,6 +1078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1785672562}
     m_Modifications:
+    - target: {fileID: 3199010822755015280, guid: a9c0ada702badbe43be75300acc72327, type: 3}
+      propertyPath: objectOffset.x
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 3199010822755015280, guid: a9c0ada702badbe43be75300acc72327, type: 3}
       propertyPath: objectOffset.y
       value: 0.3
@@ -2977,6 +2981,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1003842904}
     m_Modifications:
     - target: {fileID: 3199010822755015280, guid: a9c0ada702badbe43be75300acc72327, type: 3}
+      propertyPath: objectOffset.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3199010822755015280, guid: a9c0ada702badbe43be75300acc72327, type: 3}
       propertyPath: objectOffset.y
       value: 0.3
       objectReference: {fileID: 0}
@@ -3880,7 +3888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: 4.064, y: 2.29, z: 0.1}
+  m_LocalPosition: {x: 0, y: 2.3, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -8526,7 +8534,7 @@ MonoBehaviour:
   dialougeFile: {fileID: 4900000, guid: f5c2e974e2d2232448722a3bd9f750e5, type: 3}
   choiceButton: {fileID: 4168772143378831682, guid: 7998506752939cf428a028a73daee57b, type: 3}
   buttonPos: {fileID: 781276132}
-  textSpeed: 0.01
+  textSpeed: 0
   textName: ????
   sentence: 
   bubbles: []
