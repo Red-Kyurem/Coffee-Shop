@@ -23,7 +23,7 @@ public class PickupReciever : MonoBehaviour
     public void OnTriggerStay(Collider other)
     {
         PickupableObject otherPO = other.gameObject.GetComponent<PickupableObject>();
-        Debug.Log(other.name);
+        //Debug.Log(other.name);
         
 
 

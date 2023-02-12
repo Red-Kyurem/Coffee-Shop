@@ -40,7 +40,7 @@ public class MousePickup : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 1000, pickupLayerMask) && SelectedGM == null)
             {
-                Debug.Log("pickup!!!");
+                //Debug.Log("pickup!!!");
                 HighlightedGM = hit.transform.gameObject;
 
                 // if mouse is hovering over and gameobject is clicked on, then pick up gameobject
@@ -77,7 +77,7 @@ public class MousePickup : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 1000, buttonLayerMask) && Input.GetMouseButtonDown(0))
             {
-                Debug.Log("PRESSED!!!");
+                //Debug.Log("PRESSED!!!");
                 hit.transform.gameObject.GetComponent<ButtonAddIngredient>().AddIngredient();
             }
 

@@ -61,6 +61,20 @@ A loud whirring noise is heard as the fetus appears to speak, though no words ca
 [["You mean coffee?"|<\BUBBLE>"You mean coffee?"]]
 [["Why certainly, what type of bean soup could I get for you?"|<\BUBBLE>"Why certainly, what type of bean soup could I get for you?"]]
 [["I don't work here" |<\BUBBLE>"I don't work here."]]
+=======
+Alright fine I'll repeat myself.
+[[not really...|<\BUBBLE>Continue1]]
+// 
+<\BUBBLE>Continue2
+now make me some tea with vanilla syrup and milk foam, got it?
+<toggleHide><pauseDialouge>
+//
+<\BUBBLE>CorrectOrder
+<pauseDialouge> Looks good to me.
+alright, buddy. looks to me like you can handle your first shift.
+Good luck.
+<END>
+>>>>>>> c7f2eb1e260a17515b2d97b2929a1a58941249a8
 //
 <\BUBBLE>"You mean coffee?"
 <name=>The fetus seems unamused.

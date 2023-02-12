@@ -23,7 +23,7 @@ public class correctOrder : MonoBehaviour
         if (collider.gameObject.GetComponent<CupContents>())
         {
             hasEnteredButNotActivated = true;
-            Debug.Log("ENTERED!!!");
+            //Debug.Log("ENTERED!!!");
             //collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
         
@@ -89,7 +89,7 @@ public class correctOrder : MonoBehaviour
         if (collider.gameObject.GetComponent<CupContents>())
         {
             hasEnteredButNotActivated = false;
-            Debug.Log("EXITED!!!");
+            //Debug.Log("EXITED!!!");
             //collider.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         }
 

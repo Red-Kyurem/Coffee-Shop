@@ -19,15 +19,11 @@ public class ButtonAddIngredient : MonoBehaviour
     }
     public void AddIngredient()
     {
-        Debug.Log("HITTTT!!!");
-
-        
-            Debug.Log("PRESSED!!!");
-            
 
         if (cup != null && cup.GetComponent<PickupableObject>().objectType == ObjectType.Cup)
         {
             cup.GetComponent<CupContents>().ingredientStrings.Add(IngredientString);
+            print("Added Ingredient: " + IngredientString);
         }
         
     }
