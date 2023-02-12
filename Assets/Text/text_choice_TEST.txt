@@ -16,7 +16,8 @@ Alright fine I'll repeat myself.
 [[not really...|<\BUBBLE>Continue1]]
 // 
 <\BUBBLE>Continue2
-now make me some tea with vanilla syrup and milk foam, got it?<pauseDialouge>
+now make me some tea with vanilla syrup and milk foam, got it?
+<toggleHide><pauseDialouge>
 //
 <\BUBBLE>CorrectOrder
 <pauseDialouge> Looks good to me.
