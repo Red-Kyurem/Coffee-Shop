@@ -229,6 +229,23 @@ public class dialouge_TEST : MonoBehaviour
                     }
 
                 }
+                // Changes the scene
+                else if ((sentence.Length - charCount) >= 13 && sentence.Substring(charCount, 13) == "<changeScene=")
+                {
+                    // skip the '<changeScene=' part of the sentence from displaying in the textbox
+                    charCount += 13;
+
+                    // sets the new scene to jump to
+                    int substringLength = FindNextChar(sentence, '>', charCount);
+                    string changeSceneTo = sentence.Substring(charCount, substringLength);
+
+                    Debug.Log("change scene to: " + changeSceneTo);
+                    
+                    // skip the name and '>' part of the sentence
+                    charCount += substringLength;
+
+                    SceneManager.LoadScene(changeSceneTo);
+                }
                 // End's dialouge 
                 else if ((sentence.Length - charCount) >= 5 && sentence.Substring(charCount, 5) == "<END>")
                 {

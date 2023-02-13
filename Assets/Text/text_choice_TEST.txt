@@ -1,9 +1,8 @@
 Steam Powered Coffee
 <\BUBBLE>START
 <name=>*Long ago, humanity prospered on the Earth's surface, taking advantage of its various resources and deconstructing the surface to better suit their needs. Running out of resources,
-they were forced to relocate to an untouched plain: the sky. Ignored for eons due to the constant threat of Sky Krakens, it seemed there was no other choice.
-Whether through pure luck or the possibility of Sky Krakens beginning to die off, humanity made a new life for themselves amongst the sky, creating businesses and communities just as they did
-back on the ground.
+*they were forced to relocate to an untouched plain: the sky. Ignored for eons due to the constant threat of Sky Krakens, it seemed there was no other choice.*
+*Whether through pure luck or the possibility of Sky Krakens beginning to die off, humanity made a new life for themselves amongst the sky, creating businesses and communities just as they did back on the ground.*
 *This is where our story begins...*
 [[Continue|<\BUBBLE>Day 1/ Tutorial]]
 //
@@ -56,6 +55,7 @@ and I'm so tired that I feel each individual brain neuron die inside my head whe
 ...
 .....
 Might wanna call an ambulance.
+<changeScene=MainGame>
 //
 [[Night 1|<\BUBBLE>Night 1]]
 <\BUBBLE>Night 1
