@@ -1,0 +1,155 @@
+Steam Powered Coffee
+<\BUBBLE>START
+You prop the barista up and call an ambulance. With the fact that all the buildings and vehicles now have the ability to fly without the need to worry about traffic, the ambulance arrives before
+you even put the phone down.
+The barista is hauled away and you realize that you will probably be alone in managing the cafe for the duration of the week. Worse still, the debacle forced the cafe to close for the day.
+Might as well make sure everything is organized on the shelves, its gonna be a long night...
+You look outside every so often to see if there are any late night customers. Much to your surprise, not a single person shows up and you're stuck cleaning for several hours.
+By now the rain has really picked up. As rain tends to weigh things down, you flick a switch near the cleaning supplies and watch as the rain enters the store through a panel in the ceiling and
+exiting through a panel in the floor, getting rid of the excess weight.
+As you're wiping down the counter, you hear an odd squeaking noise coming from the store front. Looking up, you watch as a grotesque looking machine carrying a fetus bumps into the stools and
+makes its way to the counter.
+A loud whirring noise is heard as the fetus appears to speak, though no words can be heard from the fetus itself. After a couple of moments, a voice that couldn't be described as human is heard.
+<name=???>"You there. Heed this one known as Felix's order. One requires your finest bean soup in cup format."<choice> 
+[["You mean coffee?"|<\BUBBLE>"You mean coffee?"]]
+[["Why certainly, what type of bean soup could I get for you?"|<\BUBBLE>"Why certainly, what type of bean soup could I get for you?"]]
+[["I don't work here" |<\BUBBLE>"I don't work here."]]
+//
+<\BUBBLE>"You mean coffee?"
+<name=>The fetus seems unamused.
+<name=Felix> <speed=0.025> "Yes... a 'Coffee'. Specifically a ''@Decaf@ Espresso with @Hazlenut@''. Are you able to fulfill this One's order?"
+<name=>You can't help but notice that the fetus seems to be speaking slower to you.
+As if detecting your notice, the fetus speaks once again.
+<name=Felix>"If it wasn't already obvious, this One has chosen to speak slower in order to your brain function to keep up, since you don't appear to be the sharpest barista."
+<name=>You feel a little offended, a little hurt, but you still have a job to do.
+<toggleHide> <pauseDialouge> 
+//
+<\BUBBLE>"Why certainly, what type of bean soup could I get for you?"
+<name=>The fetus seems to swell with excitement
+<name=Felix>"FINALLY! Some proper service! One requires your finest @Decaf@ Espresso with @Hazlenut@ in order to operate at maximum effectiveness."
+<toggleHide> <pauseDialouge>
+//
+<\BUBBLE>"I don't work here."
+<name=>The fetus appears as puzzled as it can possibly appear
+<name=Felix>"One is confused by this query. If you do not work at this establishment, then what could you possibly be doing behind the counter?"
+<name=>A couple seconds pass as the two of you lock eyes, before it speaks again.
+<name=Felix>"Regardless, One supposes it could have been a bit clearer. One requires an @Decaf@ Espresso with @Hazlenut@ in order to function at maximum effectiveness.
+<toggleHide> <pauseDialouge>
+//
+It's now Day 2 of running the cafe.
+Your first couple shifts were relatively easy so far, with very few customers.
+Remaining shifts should be a piece of cake...right?
+After turning all the machines on, and wiping the counter down, you wrap up preparations for the day.
+Still no sign of any customers... very strange.
+You hear the noise of somebody clearing their throat before an old man approaches the counter. It would appear as though he was sitting in one of the boothes, as if waiting for someone.
+<name=???>"I was told this shop produced very fine beverages by an associate of mine. Could I perhaps have your finest whisky on the rocks? I'm positively parched from the journey over here.
+Call me Gramps, by the way."
+It would seem as though the old man has mistaken the cafe for a bar.
+[["Sir, this is a cafe. We serve coffee."|<\BUBBLE>"Sir, this is a cafe. We serve coffee."]]
+<\BUBBLE>"Sir, this is a cafe. We serve coffee."
+<name=>The old man's eyes widen for a moment before he regains his composure
+<name=Gramps>"Ah, my mistake then. The style of this shop reminded me of one I visited in my youth so I assumed it sold alcohol."
+"In that case, I would request your finest ''Cappuccino''. Surely, an order as simple as that could be accomplished."
+<toggleHide> <pauseDialouge> 
+//[[Serve Correct 2|<\BUBBLE>Serve Correct 2]]
+//[[Serve Incorrect 2|<\BUBBLE>Serve Incorrect 2]]
+//
+//
+<\BUBBLE>"Can't say I have."
+<name=>The old man's eyes narrow as he takes another sip of the drink.
+<name=Gramps>"You see... that dog and I have very important business. I've been told he's visited this cafe in the past, hence my visitation today. If you see him, try to get him to return
+to the cafe, say in 3 days time."
+<name=>The old man hands you a check. Looking at it, you can already tell that the amount listed is far more then the price of the coffee.
+<name=Gramps>"You ensure his appearance, and I promise I'll make it worth your while."
+<name=>The old man once again pulls out his pocket watch.
+<name=Gramps>"Ah, but you must excuse me. I'd love to chat more but I have important business I must attend to. Until we inevitably meet again!"
+<name=>The old man walks back to the booth he was in before promptly falling asleep as soon as he sits down.
+So much for being mysterious...
+[[Night 2|<\BUBBLE>Night 2]]
+<\BUBBLE>Night 2
+The second night.
+You have the feeling that, much like the previous night, the customers you meet will be far from normal.
+You look over at the booth the old man was sleeping in and find he must have left when your back was turned.
+After the old man's order finished, there were a couple more customers, but otherwise it was business as usual.
+You pour yourself a cup of coffee in an attempt to stay awake, but you just cant seem to shake your grogginess.
+Suddenly, you see what looks like a dog with a hat sitting at the counter. Looking at its collar, you see the name "Benedict".
+<name=Benedict>"Excuse me, could I please get some service over here?"
+<name=>Generally, dogs don't speak, so you surmise that your tiredness is causing you to hallucinate. Nonetheless, you humor the hallucination and approach the counter.
+<name=Benedict>"Good evening. I understand its a strange order, especially at this time of night, but could I have a glass of water? I'm simply parched."
+<name=>Water is actually not much of a commodity these days, since its essentially fuel. As such, the order is quite strange. The dog might as well have asked for a glass of gasoline.
+ <choice>
+[[Serve Correct 3|<\BUBBLE>Serve Correct 3]]
+[[Serve Incorrect 3|<\BUBBLE>Serve Incorrect 3]]
+<\BUBBLE>"There was an old man looking for you"
+<name=>The dog appears frightened for a moment, leaving the counter and backing up towards the door.
+"I was never here."
+You get the feeling you've said something you weren't supposed to.
+[[Day 3|<\BUBBLE>Day 3]]
+<\BUBBLE>"Nah, just feeling a little tired thats all."
+"Ah. Well it is late at night, so I cannot fault your tiredness."
+"Well, in any case, I've got my drink, I think I'll be heading out now."
+<name=>The dog leaves the counter and begins to walk towards the door.
+You get the feeling he'll be back.
+[[Day 3|<\BUBBLE>Day 3]]
+<\BUBBLE>"But of course, he's one of our regulars!"
+<name=>The old man squints while looking at your face before clearing his throat.
+<name=Gramps>"I've been in this business for a long time and I can tell when somebody is lying. If you haven't seem him then theres really no need to humor me."
+<name=>The old man sighs, looks upwards at your face again, and then continues.
+<name=Gramps>"You see... that dog and I have very important business. I've been told he's visited this cafe in the past, hence my visitation today. If you see him, try to get him to return
+to the cafe, say in 3 days time."
+<name=>The old man hands you a check. Looking at it, you can already tell that the amount listed is far more then the price of the coffee.
+<name=Gramps>"You ensure his appearance, and I promise I'll make it worth your while."
+<name=>The old man pulls out his pocket watch.
+<name=Gramps>"Ah, but you must excuse me. I'd love to chat more but I have important business I must attend to. Until we inevitably meet again!"
+<name=>The old man walks back to the booth he was in before promptly falling asleep as soon as he sits down.
+So much for being mysterious...
+<changeScene=MainGame>
+//[[Night 2|<\BUBBLE>Night 2]]
+//
+<\BUBBLE> Serve Correct 1
+<pauseDialouge> <toggleHide> <name=Felix>"Ah yes EXCEPTIONAL work. This One is very impressed at your ability to perform your occupation effectively."
+<name=>The fetus picks up the Espresso and dumps the contents into its tank, concentrating for a moment before the liquid disappears.
+<name=Felix>"Ah. Well, upon the consumption of your bean soup, this One feels rejuvinated and satisfied."
+<name=>Before you even have a chance to ask for payment, the fetus backs up at maximum speed. The doors open and you watch as the machine wheels off the side of the Cafe, before a propeller
+appears from its top and it flies away.
+What a strange encounter.
+<changeScene=MainGame>
+//
+<\BUBBLE> Serve Incorrect 1
+<pauseDialouge> <toggleHide> <name=Felix>"Hmm. This deviation from the order is... noted."
+<name=>The fetus picks up the Espresso and dumps the contents into its tank, concentrating for a moment before the liquid disappears.
+<name=Felix>"Ah. Well, upon the consumption of your bean soup, this One feels rejuvinated and satisfied."
+<name=>Before you even have a chance to ask for payment, the fetus backs up at maximum speed. The doors open and you watch as the machine wheels off the side of the Cafe, before a propeller
+appears from its top and it flies away.
+What a strange encounter.
+<changeScene=MainGame>
+//
+<\BUBBLE>Serve Correct 2
+<pauseDialouge> <toggleHide> <name=>The old man's eyes widen once again
+<name=Gramps>"Ah yes, this is most definitely the drink I have ordered!"
+<name=>He takes the drink, taking a moment to smell it before bringing it to his lips.
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+[["Can't say I have."|<\BUBBLE>"Can't say I have."]]
+[["But of course, he's one of our regulars!"|<\BUBBLE>"But of course, he's one of our regulars!"]]
+<\BUBBLE>Serve Incorrect 2
+<pauseDialouge> <toggleHide> <name=>The old man narrows his eyes before looking directly at you.
+He reaches into his coat pocket and removes a large pocketwatch, before putting it away.
+He takes the drink, taking a moment to smell it before bringing it to his lips.
+<name=Gramps>"Ah yes. I forgot to ask before ordering. You wouldn't have happened to see a dog, about the height of my knee wearing a top hat, right?"<choice>
+[["Can't say I have."|<\BUBBLE>"Can't say I have."]]
+[["But of course, he's one of our regulars!"|<\BUBBLE>"But of course, he's one of our regulars!"]]
+<\BUBBLE>Serve Correct 3
+The dog begins to aggressively drink the glass of water before looking back up at you
+<name=Benedict>"That does indeed hit the spot."
+"I must say, your face does betray some form of puzzlement. Is something the matter?" <choice>
+[["There was an old man looking for you.|<\BUBBLE>"There was an old man looking for you"]]
+[["Nah just feeling tired thats all."|<\BUBBLE>"Nah, just feeling a little tired thats all."]]
+<\BUBBLE>Serve Incorrect 3
+The dog says(?) nothing but you can tell from the way its fur is standing up that its not happy.
+A small growl is heard before what could be called a mumble is spoken:
+<name=Benedict>"Guess I should have figured. This industry is done for if I can't even get a glass of water right."
+<name=>The dog gets up and begins walking out of the cafe. As soon as it does, you feel your knees give out and you stumble behind the counter.
+Regaining your balance, you find the dog nowhere to be seen.
+[[Day 3|<\BUBBLE>Day 3]]
+<\BUBBLE>Day 3
+To be Written

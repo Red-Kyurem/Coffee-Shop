@@ -1,0 +1,20 @@
+Steam Powered Coffee
+<\BUBBLE>START
+<name=>Which Day/Night would you like to play?<choice>
+[[Day 1|<\BUBBLE>Day 1]]
+[[Night 1|<\BUBBLE>Night 1]]
+[[Day 2|<\BUBBLE>Day 2]]
+[[Night 2|<\BUBBLE>Night 2]]
+//
+<\BUBBLE>Day 1
+<changeScene=DialougeTest(Zach)>
+//
+<\BUBBLE>Night 1
+<changeScene=Night 1>
+//
+<\BUBBLE>Day 2
+<changeScene=Day 2>
+//
+<\BUBBLE>Night 2
+<changeScene=Night 2>
+//
