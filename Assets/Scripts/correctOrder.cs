@@ -6,6 +6,9 @@ public class correctOrder : MonoBehaviour
 {
     public List<string> orderStrings;
     public bool hasEnteredButNotActivated = false;
+
+    public string correctOrderName = "";
+    public string incorrectOrderName = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -71,12 +74,12 @@ public class correctOrder : MonoBehaviour
                 {
                     Debug.Log("Correct!");
 
-                    dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName("<\\BUBBLE>CorrectOrder"));
+                    dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(correctOrderName));
                 }
                 else
                 {
                     Debug.Log("INcorrect!");
-                    dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName("<\\BUBBLE>IncorrectOrder"));
+                    dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(incorrectOrderName));
                 }
 
 

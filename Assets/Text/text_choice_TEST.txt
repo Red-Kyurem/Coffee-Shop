@@ -6,6 +6,7 @@ Whether through pure luck or the possibility of Sky Krakens beginning to die off
 back on the ground.
 *This is where our story begins...*
 [[Continue|<\BUBBLE>Day 1/ Tutorial]]
+//
 <\BUBBLE>Day 1/ Tutorial
 You awaken to the smell of rain and the sun peering through your blinds.
 Another day of trying to make an honest pay, though this time its at a new location.
@@ -18,11 +19,13 @@ Thankfully, your employee contract entitles you a new position at a different br
 Unfortunately however, it's a brand new branch - meaning you're gonna have to make sure it can survive on its own before you return to your previous job. Should take about a week.
 Well, no use putting it off any longer.
 [[Time to get to work |<\BUBBLE>Time to get to work]]
+//
 <\BUBBLE>Time to get to work
 After a short ride on your sky scooter, you arrive at Kien's Coffee Shop (the new branch).
 You take a deep breath before opening the door, surprised at the lack of customers and your new coworker leaning over the counter, lazily basking in the sun peering through the glass window in
 the ceiling.
 [[Approach|<\BUBBLE>Approach]]
+//
 <\BUBBLE>Approach
 You walk up to your coworker - getting to know them might make the week move by faster.
 The barista seemingly takes no notice of your approach, occupying herself with taking in as much of the sun as possible.
@@ -34,17 +37,26 @@ and I'm so tired that I feel each individual brain neuron die inside my head whe
 "Nevertheless, its my obligation, and by that I mean written in my contract, to make sure you know how to make coffee."
 <name=>You try to recall what you were taught to make, easily remembering how you could make an @Espresso@ and a @Latte@.
 [[Continue|<\BUBBLE>Continue]]
+//
 <\BUBBLE>Continue
-<name=Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a latte with.... extra cream in it."
-[[Serve|<\BUBBLE>Serve]]
+<name=Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a @blonde@ roast latte with.... extra @Soy Milk@ in it."
+<toggleHide> <pauseDialouge> 
+//go to [[Serve|<\BUBBLE>Serve]] after completing order
+//
+<\BUBBLE>ServeIncorrect
+<pauseDialouge> <toggleHide> <name=>Upon recieving the latte, the barista's eyes narrow with disgust.
+<name=Barista>"Jerry if I'm gonna go out at least make it correctly."
+[[Continue|<\BUBBLE>Continue]]
+//
 <\BUBBLE>Serve
-<name=>Upon recieving the latte, the barista's eyes narrow. Without waiting too much longer, she takes a sip and you notice her eyes widen.
+<pauseDialouge> <toggleHide> <name=>Upon recieving the latte, the barista's eyes narrow. Without waiting too much longer, she takes a sip and you notice her eyes widen.
 <name=Barista>"I gotta say, this aint bad. Only one tiny problem that I completely forgot to mention."
 "I'm deathly allergic to coffee."
 <name=>Her eyes glaze over and she slumps over the counter.
 ...
 .....
 Might wanna call an ambulance.
+//
 [[Night 1|<\BUBBLE>Night 1]]
 <\BUBBLE>Night 1
 You prop the barista up and call an ambulance. With the fact that all the buildings and vehicles now have the ability to fly without the need to worry about traffic, the ambulance arrives before
