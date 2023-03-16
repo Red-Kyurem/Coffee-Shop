@@ -16,5 +16,5 @@ MonoBehaviour:
   secret: hang earwax
   _version: 1.0
   _serverURL: https://dd-telemetry.herokuapp.com/
-  serverCommunication: 1
+  serverCommunication: 2
   debugLogging: 0
