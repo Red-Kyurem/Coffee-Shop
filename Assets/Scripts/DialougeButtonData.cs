@@ -14,6 +14,7 @@ public class DialougeButtonData : MonoBehaviour
     }
     public void SetDialougePosition(bool uselessBool)
     {
+        DM.chosenChoiceName = nextBubbleName;
         DM.PrepareNextSentence(nextBubblePosition);
         DM.isChoiceAnswered = true;
     }

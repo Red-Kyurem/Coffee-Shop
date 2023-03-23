@@ -38,6 +38,8 @@ public class dialouge_TEST : MonoBehaviour
     public bool isChoiceAnswered = true;
     public bool hideTextBox = false;
 
+    public string chosenChoiceName = "N/A";
+
     public GameObject blackScreen;
     // Start is called before the first frame update
     void Start()
@@ -73,7 +75,20 @@ public class dialouge_TEST : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // ADD TELEMETRY HERE (Dialouge)
+        if (Input.GetMouseButtonDown(0))
+        {
+            // ADD TELEMETRY HERE (Dialouge)
+            var data = new TelemetryStructs.dialougeData()
+            {
+                hasDialougeAdvanced = (isSentenceFilledIn && isChoiceAnswered),
+                positionInScreenSpace = Input.mousePosition,
+                choiceName = chosenChoiceName
+            };
+
+            TelemetryLogger.Log(this, "Dialouge", data);
+
+            chosenChoiceName = "N/A";
+        }
 
         if (Input.GetMouseButtonDown(0) && isSentenceFilledIn && isChoiceAnswered) 
         { 
@@ -282,8 +297,11 @@ public class dialouge_TEST : MonoBehaviour
                     */
 
                     int choiceNameLength = FindNextChar(sentence, '|', charCount);
+
+                //choiceNameTelemetry = choiceNameLength;
+
                     // finds the length and text of the next bubble's name
-                    int bubbleSubstringLength = FindNextChar(sentence, ']', 2 + choiceNameLength);
+                int bubbleSubstringLength = FindNextChar(sentence, ']', 2 + choiceNameLength);
                     string bubbleName = sentence.Substring(charCount + choiceNameLength + 1, bubbleSubstringLength - 1);
                     //Debug.Log("bubbleName: " + bubbleName);
 
