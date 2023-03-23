@@ -8,21 +8,21 @@ public class correctOrder : MonoBehaviour
     public List<string> orderStrings;
     public bool hasEnteredButNotActivated = false;
 
-    
-
+    public float timeElapsed;
+    public string timeStamp;
 
     public string correctOrderName = "";
     public string incorrectOrderName = "";
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeElapsed = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timeElapsed += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -32,7 +32,6 @@ public class correctOrder : MonoBehaviour
             hasEnteredButNotActivated = true;
             //Debug.Log("ENTERED!!!");
             //collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-
 
 
         }
@@ -79,13 +78,18 @@ public class correctOrder : MonoBehaviour
 
                 if (isCupCorrect)
                 {
-                    TelemetryLogger.Log(this, "Success");
+                    timeStamp = timeElapsed.ToString();
+
+                    TelemetryLogger.Log(this, "Success", timeStamp);
 
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(correctOrderName));
                 }
                 else
                 {
-                    TelemetryLogger.Log(this, "Fail");
+                    timeStamp = timeElapsed.ToString();
+
+                    TelemetryLogger.Log(this, "Fail", timeStamp);
+
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(incorrectOrderName));
                 }
 
