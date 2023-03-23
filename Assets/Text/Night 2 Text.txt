@@ -68,6 +68,7 @@ to the cafe, say in 3 days time."
 So much for being mysterious...
 [[Night 2|<\BUBBLE>Night 2]]
 <\BUBBLE>START
+@Night 2@
 The second night.
 You have the feeling that, much like the previous night, the customers you meet will be far from normal.
 You look over at the booth the old man was sleeping in and find he must have left when your back was turned.
