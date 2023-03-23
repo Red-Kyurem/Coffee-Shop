@@ -24,7 +24,9 @@ public class ButtonAddIngredient : MonoBehaviour
         {
             cup.GetComponent<CupContents>().ingredientStrings.Add(IngredientString);
             print("Added Ingredient: " + IngredientString);
+
+            // ADD TELEMETRY HERE (IngredientAdded)
         }
-        
+
     }
 }

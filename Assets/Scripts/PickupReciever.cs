@@ -47,9 +47,14 @@ public class PickupReciever : MonoBehaviour
                 other.GetComponent<Rigidbody>().velocity = Vector3.zero;
             }
 
+            // ADD TELEMETRY HERE (ObjectUsed)
+
+
             if (transform.parent && transform.parent.gameObject.GetComponent<CupContents>())
             {
                 transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings.Add(other.gameObject.GetComponent<ItemValue>().IngredientString);
+
+                // ADD TELEMETRY HERE (IngredientAdded)
             }
 
         }

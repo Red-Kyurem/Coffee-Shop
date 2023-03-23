@@ -21,7 +21,7 @@ public class TouchManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100))
         {
             //draw invisible ray 
-            Debug.DrawLine(ray.origin, hit.point, Color.red);
+           // Debug.DrawLine(ray.origin, hit.point, Color.red);
             //log hit area to the console
             //Debug.Log(hit.point);
         }

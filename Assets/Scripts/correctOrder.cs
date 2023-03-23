@@ -75,6 +75,8 @@ public class correctOrder : MonoBehaviour
                     if (!isCupCorrect) { break; }
                 }
 
+                // ADD TELEMETRY HERE (CorrectOrder)
+
 
                 if (isCupCorrect)
                 {

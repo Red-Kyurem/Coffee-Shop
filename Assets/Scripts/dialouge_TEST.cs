@@ -73,6 +73,8 @@ public class dialouge_TEST : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ADD TELEMETRY HERE (Dialouge)
+
         if (Input.GetMouseButtonDown(0) && isSentenceFilledIn && isChoiceAnswered) 
         { 
             // advances dialouge

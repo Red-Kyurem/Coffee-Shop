@@ -40,6 +40,7 @@ public class MousePickup : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 1000, pickupLayerMask) && SelectedGM == null)
             {
+
                 //Debug.Log("pickup!!!");
                 HighlightedGM = hit.transform.gameObject;
 
@@ -48,6 +49,9 @@ public class MousePickup : MonoBehaviour
                 {
                     if (HighlightedGM.GetComponent<PickupableObject>().canBePickedUp)
                     {
+                        // ADD TELEMETRY HERE (ObjectClickedOn)
+
+
                         SelectedGM = HighlightedGM;
                         HighlightedGM = null;
                         rb = SelectedGM.GetComponent<Rigidbody>();
@@ -77,6 +81,8 @@ public class MousePickup : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 1000, buttonLayerMask) && Input.GetMouseButtonDown(0))
             {
+                // ADD TELEMETRY HERE (ObjectClickedOn)
+
                 //Debug.Log("PRESSED!!!");
                 hit.transform.gameObject.GetComponent<ButtonAddIngredient>().AddIngredient();
             }
