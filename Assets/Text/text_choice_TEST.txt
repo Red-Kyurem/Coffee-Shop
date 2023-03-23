@@ -1,31 +1,6 @@
 Steam Powered Coffee
 <\BUBBLE>START
-<name=>*Long ago, humanity prospered on the Earth's surface, taking advantage of its various resources and deconstructing the surface to better suit their needs. Running out of resources,
-*they were forced to relocate to an untouched plain: the sky. Ignored for eons due to the constant threat of Sky Krakens, it seemed there was no other choice.*
-*Whether through pure luck or the possibility of Sky Krakens beginning to die off, humanity made a new life for themselves amongst the sky, creating businesses and communities just as they did back on the ground.*
-*This is where our story begins...*
-[[Continue|<\BUBBLE>Day 1/ Tutorial]]
-//
-<\BUBBLE>Day 1/ Tutorial
-You awaken to the smell of rain and the sun peering through your blinds.
-Another day of trying to make an honest pay, though this time its at a new location.
-You rub your eyes, attempting to make the world come into focus. You stand up, wincing in pain for a moment as your muscles stiffen.
-You try to remember your tasks for the day, starting to make a cup of coffee before thinking back to a week prior.
-You worked a rather comfortable job at Kien's Coffee Shop, a local cafe in your neighbourhood. With no prior warning however, the long since dormant species of Sky Kraken appeared after punching
-a hole through the ground of the shop. It seemed rather relaxed at first, though due to the suddenness of its appearence, the situation escalated and the whole building was wrecked beyond
-repair.
-Thankfully, your employee contract entitles you a new position at a different branch while the old branch is rebuilt from the "ground" up.
-Unfortunately however, it's a brand new branch - meaning you're gonna have to make sure it can survive on its own before you return to your previous job. Should take about a week.
-Well, no use putting it off any longer.
-[[Time to get to work |<\BUBBLE>Time to get to work]]
-//
-<\BUBBLE>Time to get to work
-After a short ride on your sky scooter, you arrive at Kien's Coffee Shop (the new branch).
-You take a deep breath before opening the door, surprised at the lack of customers and your new coworker leaning over the counter, lazily basking in the sun peering through the glass window in
-the ceiling.
-[[Approach|<\BUBBLE>Approach]]
-//
-<\BUBBLE>Approach
+@Day 1@
 You walk up to your coworker - getting to know them might make the week move by faster.
 The barista seemingly takes no notice of your approach, occupying herself with taking in as much of the sun as possible.
 Waving a hand in front of her seems to snap her out of her trance, as she slowly turns towards you.
@@ -55,7 +30,7 @@ and I'm so tired that I feel each individual brain neuron die inside my head whe
 ...
 .....
 Might wanna call an ambulance.
-<changeScene=MainGame>
+<changeScene=Night 1>
 //
 [[Night 1|<\BUBBLE>Night 1]]
 <\BUBBLE>Night 1

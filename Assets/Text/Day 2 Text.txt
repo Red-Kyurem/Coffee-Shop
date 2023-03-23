@@ -37,6 +37,7 @@ As if detecting your notice, the fetus speaks once again.
 <toggleHide> <pauseDialouge>
 //
 <\BUBBLE>START
+@Day 2@
 It's now Day 2 of running the cafe.
 Your first couple shifts were relatively easy so far, with very few customers.
 Remaining shifts should be a piece of cake...right?
@@ -66,7 +67,7 @@ to the cafe, say in 3 days time."
 <name=Gramps>"Ah, but you must excuse me. I'd love to chat more but I have important business I must attend to. Until we inevitably meet again!"
 <name=>The old man walks back to the booth he was in before promptly falling asleep as soon as he sits down.
 So much for being mysterious...
-<changeScene=MainGame>
+<changeScene=Night 2>
 [[Night 2|<\BUBBLE>Night 2]]
 <\BUBBLE>Night 2
 The second night.
