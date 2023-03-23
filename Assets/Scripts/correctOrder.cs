@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class correctOrder : MonoBehaviour
 {
     public List<string> orderStrings;
     public bool hasEnteredButNotActivated = false;
+
+    
+
 
     public string correctOrderName = "";
     public string incorrectOrderName = "";
@@ -28,6 +32,9 @@ public class correctOrder : MonoBehaviour
             hasEnteredButNotActivated = true;
             //Debug.Log("ENTERED!!!");
             //collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+
+
+
         }
         
     }
@@ -72,13 +79,13 @@ public class correctOrder : MonoBehaviour
 
                 if (isCupCorrect)
                 {
-                    Debug.Log("Correct!");
+                    TelemetryLogger.Log(this, "Success");
 
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(correctOrderName));
                 }
                 else
                 {
-                    Debug.Log("INcorrect!");
+                    TelemetryLogger.Log(this, "Fail");
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(incorrectOrderName));
                 }
 
