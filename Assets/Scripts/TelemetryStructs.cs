@@ -24,7 +24,7 @@ public class TelemetryStructs : MonoBehaviour
     [System.Serializable]
     public struct objectUsedData
     {
-        public string ObjectName;
+        public string objectName;
         public string objectRecievedName;
     }
 
@@ -42,6 +42,7 @@ public class TelemetryStructs : MonoBehaviour
     {
         public string cupContents;
         public string correctOrder;
+        public bool madeCorrectOrder;
         public string timeToComplete;
     }
 }

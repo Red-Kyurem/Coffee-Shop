@@ -50,7 +50,13 @@ public class MousePickup : MonoBehaviour
                     if (HighlightedGM.GetComponent<PickupableObject>().canBePickedUp)
                     {
                         // ADD TELEMETRY HERE (ObjectClickedOn)
-
+                        var data = new TelemetryStructs.objectClickedOnData()
+                        {
+                            ObjectName = HighlightedGM.name,
+                            ObjectPositionWorldSpace = HighlightedGM.transform.position,
+                            positionInScreenSpace = Input.mousePosition
+                        };
+                        TelemetryLogger.Log(this, "Object Clicked On", data);
 
                         SelectedGM = HighlightedGM;
                         HighlightedGM = null;
@@ -82,6 +88,13 @@ public class MousePickup : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 1000, buttonLayerMask) && Input.GetMouseButtonDown(0))
             {
                 // ADD TELEMETRY HERE (ObjectClickedOn)
+                var data = new TelemetryStructs.objectClickedOnData()
+                {
+                    ObjectName = hit.transform.gameObject.name,
+                    ObjectPositionWorldSpace = hit.transform.position,
+                    positionInScreenSpace = Input.mousePosition
+                };
+                TelemetryLogger.Log(this, "Object Clicked On", data);
 
                 //Debug.Log("PRESSED!!!");
                 hit.transform.gameObject.GetComponent<ButtonAddIngredient>().AddIngredient();

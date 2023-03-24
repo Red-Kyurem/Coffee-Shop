@@ -48,22 +48,25 @@ public class PickupReciever : MonoBehaviour
             }
 
             // ADD TELEMETRY HERE (ObjectUsed)
-
+            var ingredientData = new TelemetryStructs.objectUsedData()
+            {
+                objectName = this.transform.parent.name,
+                objectRecievedName = other.name
+            };
+            TelemetryLogger.Log(this, "Object Used", ingredientData);
 
             if (transform.parent && transform.parent.gameObject.GetComponent<CupContents>())
             {
                 transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings.Add(other.gameObject.GetComponent<ItemValue>().IngredientString);
 
                 // ADD TELEMETRY HERE (IngredientAdded)
-                string ingredientsCombinedString = string.Join(",", other.gameObject.GetComponent<ItemValue>().IngredientString);
-                string cupContentsCombinedString = string.Join(",", transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings);
-
+                string ingredientsCombinedString = string.Join(", ", other.gameObject.GetComponent<ItemValue>().IngredientString);
+                string cupContentsCombinedString = string.Join(", ", transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings);
                 var data = new TelemetryStructs.ingredientAddedData()
                 {
                     ingredientName = ingredientsCombinedString,
                     cupContents = cupContentsCombinedString
                 };
-
                 TelemetryLogger.Log(this, "Add Ingredient", data);
 
 

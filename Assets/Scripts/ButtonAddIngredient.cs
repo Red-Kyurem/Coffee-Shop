@@ -25,7 +25,7 @@ public class ButtonAddIngredient : MonoBehaviour
             cup.GetComponent<CupContents>().ingredientStrings.Add(IngredientString);
 
             // ADD TELEMETRY HERE (IngredientAdded)
-            string cupContentsCombinedString = string.Join(",",cup.GetComponent<CupContents>().ingredientStrings);
+            string cupContentsCombinedString = string.Join(", ",cup.GetComponent<CupContents>().ingredientStrings);
 
             var data = new TelemetryStructs.ingredientAddedData()
             {
