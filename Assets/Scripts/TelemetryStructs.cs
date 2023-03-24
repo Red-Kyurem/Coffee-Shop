@@ -13,7 +13,7 @@ public class TelemetryStructs : MonoBehaviour
     }
 
     [System.Serializable]
-    struct objectClickedOnData
+    public struct objectClickedOnData
     {
         public string ObjectName;
         public Vector3 ObjectPositionWorldSpace;
@@ -21,24 +21,26 @@ public class TelemetryStructs : MonoBehaviour
     }
 
     [System.Serializable]
-    struct objectUsedData
+    public struct objectUsedData
     {
         public string ObjectName;
         public string objectRecievedName;
     }
 
     [System.Serializable]
-    struct ingredientAddedData
+    public struct ingredientAddedData
     {
         public string ingredientName;
         public string[] cupContents;
     }
 
+
+    //Kien- I found it easier to use string and just convert everything else to string instead of string array and floats. :)
     [System.Serializable]
-    struct servedCupData
+    public struct servedCupData
     {
-        public string[] cupContents;
-        public string[] correctOrder;
-        public float totalTimeToComplete;
+        public string cupContents;
+        public string correctOrder;
+        public string timeToComplete;
     }
 }

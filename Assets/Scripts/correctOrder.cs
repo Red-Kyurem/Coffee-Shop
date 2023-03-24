@@ -13,6 +13,10 @@ public class correctOrder : MonoBehaviour
 
     public string correctOrderName = "";
     public string incorrectOrderName = "";
+
+    private string cupContents;
+    private string orderContents;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,26 +79,43 @@ public class correctOrder : MonoBehaviour
                     if (!isCupCorrect) { break; }
                 }
 
-                // ADD TELEMETRY HERE (CorrectOrder)
+                // ADD TELEMETRY HERE (CorrectOrder) DONE!!
 
 
                 if (isCupCorrect)
                 {
                     timeStamp = timeElapsed.ToString();
+                    cupContents = string.Join(",", cupIngredientStrings);
+                    orderContents = string.Join(",", orderIngredientStrings);
 
-                    TelemetryLogger.Log(this, "Success", timeStamp);
+                    var data = new TelemetryStructs.servedCupData()
+                    {
+                        cupContents = cupContents, 
+                        correctOrder = orderContents, 
+                        timeToComplete = timeStamp 
+                    };
+
+                    TelemetryLogger.Log(this, "Order Success", data);
 
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(correctOrderName));
                 }
                 else
                 {
                     timeStamp = timeElapsed.ToString();
+                    cupContents = string.Join(",", cupIngredientStrings);
+                    orderContents = string.Join(",", orderIngredientStrings);
 
-                    TelemetryLogger.Log(this, "Fail", timeStamp);
+                    var data = new TelemetryStructs.servedCupData()
+                    {
+                        cupContents = cupContents,
+                        correctOrder = orderContents,
+                        timeToComplete = timeStamp
+                    };
+
+                    TelemetryLogger.Log(this, "Order Fail", data);
 
                     dialougeScript.PrepareNextSentence(dialougeScript.CheckForMatchingBubbleName(incorrectOrderName));
                 }
-
 
             }
         }
