@@ -31,7 +31,7 @@ public class TelemetryStructs : MonoBehaviour
     public struct ingredientAddedData
     {
         public string ingredientName;
-        public string[] cupContents;
+        public string cupContents;
     }
 
 

@@ -23,9 +23,18 @@ public class ButtonAddIngredient : MonoBehaviour
         if (cup != null && cup.GetComponent<PickupableObject>().objectType == ObjectType.Cup)
         {
             cup.GetComponent<CupContents>().ingredientStrings.Add(IngredientString);
-            print("Added Ingredient: " + IngredientString);
 
             // ADD TELEMETRY HERE (IngredientAdded)
+            string cupContentsCombinedString = string.Join(",",cup.GetComponent<CupContents>().ingredientStrings);
+
+            var data = new TelemetryStructs.ingredientAddedData()
+            {
+                ingredientName = IngredientString,
+                cupContents = cupContentsCombinedString
+            };
+
+            TelemetryLogger.Log(this, "Add Ingredient", data);
+
         }
 
     }
