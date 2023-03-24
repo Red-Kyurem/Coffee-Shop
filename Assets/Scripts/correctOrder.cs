@@ -9,7 +9,7 @@ public class correctOrder : MonoBehaviour
     public bool hasEnteredButNotActivated = false;
 
     public float timeElapsed;
-    public string timeStamp;
+    private string timeStamp;
 
     public string correctOrderName = "";
     public string incorrectOrderName = "";

@@ -10,6 +10,7 @@ public class TelemetryStructs : MonoBehaviour
         public bool hasDialougeAdvanced;
         public Vector2 positionInScreenSpace;
         public string choiceName;
+        public string timeStamp;
     }
 
     [System.Serializable]

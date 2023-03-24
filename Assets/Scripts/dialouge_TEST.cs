@@ -40,6 +40,8 @@ public class dialouge_TEST : MonoBehaviour
 
     public string chosenChoiceName = "N/A";
 
+    public float timeElapsed;
+
     public GameObject blackScreen;
     // Start is called before the first frame update
     void Start()
@@ -64,6 +66,9 @@ public class dialouge_TEST : MonoBehaviour
                 }
                     numOfBubbles++;
             }
+
+
+            timeElapsed = 0;
         }
 
         
@@ -77,17 +82,22 @@ public class dialouge_TEST : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            string timeStamp = timeElapsed.ToString();
+
+
             // ADD TELEMETRY HERE (Dialouge)
             var data = new TelemetryStructs.dialougeData()
             {
                 hasDialougeAdvanced = (isSentenceFilledIn && isChoiceAnswered),
                 positionInScreenSpace = Input.mousePosition,
-                choiceName = chosenChoiceName
+                choiceName = chosenChoiceName,
+                timeStamp = timeStamp
             };
 
             TelemetryLogger.Log(this, "Dialouge", data);
 
             chosenChoiceName = "N/A";
+            
         }
 
         if (Input.GetMouseButtonDown(0) && isSentenceFilledIn && isChoiceAnswered) 
@@ -99,6 +109,9 @@ public class dialouge_TEST : MonoBehaviour
         { 
             textSpeed = 0; 
         }
+
+
+        timeElapsed += Time.deltaTime;
     }
 
 
