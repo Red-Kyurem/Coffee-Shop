@@ -4,16 +4,16 @@ Steam Powered Coffee
 You walk up to your coworker - getting to know them might make the week move by faster.
 The barista seemingly takes no notice of your approach, occupying herself with taking in as much of the sun as possible.
 Waving a hand in front of her seems to snap her out of her trance, as she slowly turns towards you.
-<name=Barista>"Who are you supposed to be... Wait don't tell me: You must be the new guy... what was your name... Jerry!"
+<name= Barista>"Who are you supposed to be... Wait don't tell me: You must be the new guy... what was your name... Jerry!"
 <name=>Your name obviously isn't Jerry, unless it is, in which case she seemed to have guessed correctly.
-<name=Barista>"Listen here, Jerry. I've been promised vacation days for the last couple months, but I haven't gotten any cause of all the issues with that other cafe getting ripped in half,
+<name =Barista>"Listen here, Jerry. I've been promised vacation days for the last couple months, but I haven't gotten any cause of all the issues with that other cafe getting ripped in half,
 and I'm so tired that I feel each individual brain neuron die inside my head whenever I try to think."
 "Nevertheless, its my obligation, and by that I mean written in my contract, to make sure you know how to make coffee."
 <name=>You try to recall what you were taught to make, easily remembering how you could make an @Espresso@ and a @Latte@.
 [[Continue|<\BUBBLE>Continue]]
 //
 <\BUBBLE>Continue
-<name=Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a @blonde@ roast latte with.... extra @Soy Milk@ in it."
+<name = Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a @blonde@ roast latte with.... extra @Soy Milk@ in it."
 <toggleHide> <pauseDialouge> 
 //go to [[Serve|<\BUBBLE>Serve]] after completing order
 //

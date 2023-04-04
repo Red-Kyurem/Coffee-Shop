@@ -187,10 +187,31 @@ public class dialouge_TEST : MonoBehaviour
                 }
 
                 // changes the speed of the text
-                else if ((sentence.Length - charCount) >= 7 && sentence.Substring(charCount, 7) == "<speed=")
+                else if ((sentence.Length - charCount) >= 6 && sentence.Substring(charCount, 6) == "<speed")
                 {
-                    // skip the '<speed=' part of the sentence from displaying in the textbox
-                    charCount += 7;
+                    // skip the '<speed' part of the sentence from displaying in the textbox
+                    charCount += 6;
+
+                    if ((sentence.Length - charCount) >= 3 && sentence.Substring(charCount, 3) == " = ")
+                    {
+                        // skip the ' = ' part of the sentence from displaying in the textbox
+                        charCount += 3;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == " =")
+                    {
+                        // skip the ' =' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == "= ")
+                    {
+                        // skip the '= ' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 1 && sentence.Substring(charCount, 1) == "=")
+                    {
+                        // skip the '=' part of the sentence from displaying in the textbox
+                        charCount += 1;
+                    }
 
                     // sets the new text speed
                     int substringLength = FindNextChar(sentence, '>', charCount);
@@ -201,10 +222,31 @@ public class dialouge_TEST : MonoBehaviour
                 }
 
                 // pauses the text for an amount of time
-                else if ((sentence.Length - charCount) >= 7 && sentence.Substring(charCount, 7) == "<pause=")
+                else if ((sentence.Length - charCount) >= 6 && sentence.Substring(charCount, 6) == "<pause")
                 {
-                    // skip the '<pause=' part of the sentence from displaying in the textbox
-                    charCount += 7;
+                    // skip the '<pause' part of the sentence from displaying in the textbox
+                    charCount += 6;
+
+                    if ((sentence.Length - charCount) >= 3 && sentence.Substring(charCount, 3) == " = ")
+                    {
+                        // skip the ' = ' part of the sentence from displaying in the textbox
+                        charCount += 3;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == " =")
+                    {
+                        // skip the ' =' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == "= ")
+                    {
+                        // skip the '= ' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 1 && sentence.Substring(charCount, 1) == "=")
+                    {
+                        // skip the '=' part of the sentence from displaying in the textbox
+                        charCount += 1;
+                    }
 
                     // pauses the text for an amount of time
                     int substringLength = FindNextChar(sentence, '>', charCount);
@@ -215,10 +257,31 @@ public class dialouge_TEST : MonoBehaviour
                 }
 
                 // sets a new name for nameTextBox 
-                else if ((sentence.Length - charCount) >= 6 && sentence.Substring(charCount, 6) == "<name=")
+                else if ((sentence.Length - charCount) >= 5 && sentence.Substring(charCount, 5) == "<name")
                 {
-                    // skip the '<name=' part of the sentence from displaying in the textbox
-                    charCount += 6;
+                    // skip the '<name' part of the sentence from displaying in the textbox
+                    charCount += 5;
+
+                    if ((sentence.Length - charCount) >= 3 && sentence.Substring(charCount, 3) == " = ")
+                    {
+                        // skip the ' = ' part of the sentence from displaying in the textbox
+                        charCount += 3;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == " =")
+                    {
+                        // skip the ' =' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == "= ")
+                    {
+                        // skip the '= ' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 1 && sentence.Substring(charCount, 1) == "=")
+                    {
+                        // skip the '=' part of the sentence from displaying in the textbox
+                        charCount += 1;
+                    }
 
                     // sets the new name in nameTextBox
                     int substringLength = FindNextChar(sentence, '>', charCount);
@@ -260,10 +323,31 @@ public class dialouge_TEST : MonoBehaviour
 
                 }
                 // Changes the scene
-                else if ((sentence.Length - charCount) >= 13 && sentence.Substring(charCount, 13) == "<changeScene=")
+                else if ((sentence.Length - charCount) >= 12 && sentence.Substring(charCount, 12) == "<changeScene")
                 {
-                    // skip the '<changeScene=' part of the sentence from displaying in the textbox
-                    charCount += 13;
+                    // skip the '<changeScene' part of the sentence from displaying in the textbox
+                    charCount += 12;
+
+                    if ((sentence.Length - charCount) >= 3 && sentence.Substring(charCount, 3) == " = ")
+                    {
+                        // skip the ' = ' part of the sentence from displaying in the textbox
+                        charCount += 3;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == " =")
+                    {
+                        // skip the ' =' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 2 && sentence.Substring(charCount, 2) == "= ")
+                    {
+                        // skip the '= ' part of the sentence from displaying in the textbox
+                        charCount += 2;
+                    }
+                    else if ((sentence.Length - charCount) >= 1 && sentence.Substring(charCount, 1) == "=")
+                    {
+                        // skip the '=' part of the sentence from displaying in the textbox
+                        charCount += 1;
+                    }
 
                     // sets the new scene to jump to
                     int substringLength = FindNextChar(sentence, '>', charCount);
