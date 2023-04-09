@@ -106,7 +106,7 @@ to the cafe, say in 3 days time."
 <name=Gramps>"Ah, but you must excuse me. I'd love to chat more but I have important business I must attend to. Until we inevitably meet again!"
 <name=>The old man walks back to the booth he was in before promptly falling asleep as soon as he sits down.
 So much for being mysterious...
-<changeScene=MainGame>
+<changeScene=Night 2>
 //[[Night 2|<\BUBBLE>Night 2]]
 //
 <\BUBBLE> Serve Correct 1
@@ -116,7 +116,7 @@ So much for being mysterious...
 <name=>Before you even have a chance to ask for payment, the fetus backs up at maximum speed. The doors open and you watch as the machine wheels off the side of the Cafe, before a propeller
 appears from its top and it flies away.
 What a strange encounter.
-<changeScene=MainGame>
+<changeScene=Night 2>
 //
 <\BUBBLE> Serve Incorrect 1
 <pauseDialouge> <toggleHide> <name=Felix>"Hmm. This deviation from the order is... noted."
@@ -125,7 +125,7 @@ What a strange encounter.
 <name=>Before you even have a chance to ask for payment, the fetus backs up at maximum speed. The doors open and you watch as the machine wheels off the side of the Cafe, before a propeller
 appears from its top and it flies away.
 What a strange encounter.
-<changeScene=MainGame>
+<changeScene=Night 2>
 //
 <\BUBBLE>Serve Correct 2
 <pauseDialouge> <toggleHide> <name=>The old man's eyes widen once again
