@@ -13,7 +13,7 @@ and I'm so tired that I feel each individual brain neuron die inside my head whe
 [[Continue|<\BUBBLE>Continue]]
 //
 <\BUBBLE>Continue
-<name = Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a @blonde@ roast latte with.... extra @Soy Milk@ in it."
+<name = Barista>"Alright Jerry lets try to get this done as quickly as possible, both for your and my own sake... make me a @blonde@ roast latte with.... one @Soy Milk@ in it."
 <toggleHide> <pauseDialouge> 
 //go to [[Serve|<\BUBBLE>Serve]] after completing order
 //
