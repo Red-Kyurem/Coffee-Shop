@@ -1,0 +1,45 @@
+<\BUBBLE>Night 5
+It's the last shift at the new branch.
+You look around the coffee shop, embedding its appearence into your mind.
+While it looks similar to the old branch, there's definitely something unique
+about it that makes you a little sad to leave.
+You'll even miss the constant holes in the floor from the "customers", as while
+they were definitely a hastle to clean up, they gave you a way to kill time
+during your shift.
+The shop is quiet, and you're surprised to see that nobody has come to see you
+off.
+You think back to all the people you've met this week.
+The Barista, whom you probably inadvertently killed by doing your job, and who's
+name you never actually learned.
+Felix, who's body you basically destroyed by doing your job.
+Gramps, who found Benedict thanks to you.
+Benedict, whom is still on the run for tax evasion
+Cien, who remains terrified of the letter "K"
+and Kevin, who was responsible for your job relocation in the first place.
+You're glad to have met these people, even if some did more harm to the world
+then good.
+You glance at the clock on the wall and notice your shift is coming to a close.
+Seems like reminiscing about things eats a lot of time. That, or the narrative
+designer wasn't sure how else to end the game.
+You decide you're gonna make yourself a coffee before you go.
+Let's see. The nightime atmosphere reminds you of Dark Roast, and the moon of
+milk, so let's make a Dark Roast blend with mocha and 2% Milk.
+[[Serve Correct FINAL|<\BUBBLE>Serve Correct FINAL]]
+[[Serve Incorrect FINAL|<\BUBBLE>Serve Incorrect FINAL]]
+<\BUBBLE>Serve Correct FINAL
+You construct your coffee and take a sip.
+It's pretty good.
+You finish the coffee and head over to the door, flipping the sign over one
+final time.
+You get on your sky scooter, and begin the long drive back home looking back one
+final time...
+[[THE END|<\BUBBLE>THE END]]
+<\BUBBLE>Serve Incorrect FINAL
+You taste the coffee you made for yourself and have to stop yourself from
+gagging.
+Ain't that poetic that the final coffee at his shop wasn't even made right?
+Regardless, you feel you'll finish the cup anyways.
+You head over to the door, flipping the sign over one final time.
+You get on your sky scooter, and begin the long drive back home, not taking the
+time to look back...
+[[THE END|<\BUBBLE>THE END]]

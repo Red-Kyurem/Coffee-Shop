@@ -1,0 +1,104 @@
+<\BUBBLE>Night 3
+Night 3 means only 2 more to go.
+By this point, you've taken your mental health into consideration, and closed
+the store for a bit in order to rest up. You've been working 5 shifts in a row
+at this point, and already passed out once.
+Reentering the coffee shop and flipping the door sign to read "Open", you're
+greeted with a MASSIVE SQUID TENTACLE COMING THROUGH THE FLOOR.
+You can tell that this is the same sky kraken that destroyed your previous job
+location. How can you tell? Theres still a piece of shrapnel lodged in the
+tentacle - a piece of the sign outside Kien's Coffee Shop, with the letter K
+from Kien now permanently embededed within the Kraken.
+Nonetheless, the Kraken appears extremely calm, and as you approach it turns in
+place so that it's "front side" is facing you. You notice a pair of comical
+disguise glasses on this side of the tentacle, giving the appearence that the
+tentacle has a face.
+<name = "???"> "Ah hello there. Might you be one of the employees at this
+establishment? I'm simply starving and would very much enjoy one of your
+coffees.
+<name = ""> You should have figured that it was only here for coffee. After all,
+when this exact tentacle was at the previous location, he asked for the same
+order. The natural escalation that follows a massive tentacle punching a hole in
+the floor and asking for a coffee was really the only reason why the shop was
+ripped in half.
+You inch around the tentacle to get back behind the counter. Taking a deep
+breath, you prepare yourself for the tentacles order. Perhaps not quite
+understanding the situation you're in, or from shock, you feel the urge to
+question the tentacle.
+[["You seem familiar..." |<\BUBBLE>"You seem familiar..."]]
+<\BUBBLE>"You seem familiar..."
+Upon hearing what you said, the tentacle seems to...sweat?
+<name = "???"> "I'm not quite sure I follow. This is the first time I've ever
+entered this coffee shop, and as you can tell I'm as generic looking as they
+come. Yessir, just good ol Kevin the completely normal human being, who is
+definitely not a tentacle.
+<name = ""> Right. Anyways you get your notepad out in order to eagerly take
+"Kevin"'s order.
+<name = "Kevin"> Alright so... uh... could I get a decaf espresso with extra soy
+milk. And I do mean EXTRA. Like at least 4 cups added.
+<choice>
+[[Serve Correct 3|<\BUBBLE>Serve Correct 5]]
+[[Serve Incorrect 3|<\BUBBLE>Serve Incorrect 5]]
+<\BUBBLE>Serve Correct 5
+<name = ""> Kevin recieves the coffee, retracting into the ground as a very
+audible slurping noise is heard from below the shop. He reappears, minus one cup
+and holding an extraordinairly small wallet.
+<name = "Kevin"> "So.. uh... funny story. I was drinking the coffee you gave me
+and - get this - the cup disappeared! Heh... uh... terribly sorry about that.
+<name = ""> Replacing the cup on the counter with a new one, you yet again feel
+another urge to question Kevin.
+<choice>
+[[I just noticed where I know you from.|<\BUBBLE>I just noticed where I know you
+from.]]
+[[*decide not to question after all.*|<\BUBBLE>*decide not to question after
+all.*]]
+<\BUBBLE>Serve Incorrect 5
+<name = ""> Kevin takes the cup, disappearing below the ground before
+reappearing with the cup, and his disguise goggles contorted so they look
+"angry"
+<name = "Kevin"> "Is this some sort of joke?? I'm pretty sure my order was
+pretty simple to make. I'm sorry but I can't possibly pay you for this, seeing
+as its missing what I asked for.
+<name = ""> He pauses for a moment.
+<name = "Kevin"> "In fact, I've never liked your attitude this whole time. Even
+before you took my order, you implied I was something "inhuman". Frankly, I'm
+offended, and I'm leaving.
+<name = ""> He disappears once more, reappearing with the goggle even more
+contorted.
+<name = "Kevin"> "And trust me. I will be back..."
+<name = ""> He disappears one final time, as a booming noise is heard below the
+shop, and, upon looking down into the hole in the ground, you see that Kevin is
+no longer there.
+Here's hoping that he didn't mean what he said.
+[[Day 4|<\BUBBLE>Day 4]]
+<\BUBBLE>I just noticed where I know you from.
+<name = "Kevin"> YOU DO?! I mean... you do?
+<name = "You"> "Yeah, you're that tentacle from the old coffee shop."
+Kevin slumps for a moment, disappearing beneath the floor and coming back with
+his disguise goggles contorted so they look "sad".
+<name = "Kevin"> "Yeah... you got me. I'm the same kraken from the incident at
+the old coffee shop... But you gotta understand, I didn't MEAN to destroy the
+shop. Honest. I'm not stupid, I could tell that my goggles don't fool anybody.
+Despite that, Kien's Coffee Shop is talked about so much by you humans, that I
+couldn't help but become interested. I guess I got flustered from the sudden
+silence that occured when I ordered that I just... flipped out?"
+<name = ""> He does seem genuinely sorry about the destruction of the old
+branch.
+<name = "Kevin"> "I did some thinking about how I should better control my
+emotions, even started going in to see this guy, Gramps, whos a therapist...
+Anyways, I'm really sorry about what I did, and I'm willing to pay for the
+damage, if you'll accept that I'm working to be better.
+<name = ""> Without waiting too long for an answer, Kevin disappears under the
+floor again, pulling out the money for the coffee and a check for 50 grand to
+help with the restoration costs of the old branch. He places them on the
+counter, suprisingly delicately, before "looking" at you with his goggles.
+<name = "Kevin"> "You know what, I feel way better getting that off my chest.
+Thanks for hearing me out."
+<name = ""> Kevin takes a bow, before exiting back under the floor.
+Definitely gonna be needing to fix that hole, but you feel like you did the
+right thing hearing Kevin out.
+[[Day 4|<\BUBBLE>Day 4]]
+<\BUBBLE>*decide not to question after all.*
+You decide it's better to not "poke the bear" so to speak.
+You recieve payment from Kevin, before he disappears looking satisfied.
+[[Day 4|<\BUBBLE>Day 4]]

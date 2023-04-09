@@ -1,0 +1,93 @@
+<\BUBBLE>Day 5
+At long last, it's Day 5. You've done 8 shifts so far, and this is the last day
+shift.
+By now, you're pretty comfortable running the cafe, and its clear that word is
+getting out about the new branch, as there's much more customers now then there
+were earlier in the week.
+You've cleaned up the remains of Felix at this point, and its almost impossible
+to tell that last night even occurred.
+After performing morning maintenence on the coffee machines, and tidying up,
+you're ready to properly begin today's shift.
+Midway into the shift, you hear somebody stumbling outside the cafe, and look to
+see that the Barista is back - albeit barely hanging on.
+She struggles with opening the door, as if her very limbs aren't cooperating.
+Eventually she does manage to open the door, though upon entering the door
+swings back and knocks her flat on her face.
+You hear a very audible sigh, before she slowly stands back up.
+She stumbles towards the counter, before falling towards it, catching herself
+and using the counter for balance.
+<name = "Barista"> "Hey there Jerry... how're things going here?"
+<name = ""> Every word she speaks seems like it takes all of her effort.
+<name = "Barista"> "I felt bad about leaving you to your own devices here, so I
+thought I'd check in and see how things are working out. Seems like you've
+gotten the hang of things?"<choice>
+[["Things are going well." |<\BUBBLE>"Things are going well."]]
+[["I struggle to perform." |<\BUBBLE>"I struggle to perform."]]
+<\BUBBLE>"Things are going well."
+<name = ""> A faint smile can be traced across her lips.
+<name = "Barista"> "That's really good to hear. I apologize for not mentioning
+my allergy to coffee. I know I should have, but theres some sort of
+gratification I get from drinking something I know is bad for me. As a result,
+you've been alone here for most of the week."
+<name = ""> She wobbles for a moment.
+<name = "Barista"> "Anyways, I was reading my contract and it turns out that
+"mortal illness" isn't a good excuse to take time off. Seeing as you and I are
+basically the only employees, and I'd rather not kill myself doing my job in
+this state, I'll test you on another drink and then go back home. You seem
+pretty capable anyways, so I'm sure you'll survive the last 2 shifts before you
+leave.
+<name = ""> She thinks for a moment, and you swear you see her eyes glaze over
+for a second.
+<name = "Barista"> "How about this. Give me a Dark Roast with Hazlenut, Mocha,
+and extra soy milk - meaning more then 1 milk, if that wasn't clear."
+[[Serve Correct 8|<\BUBBLE>Serve Correct 8]]
+[[Serve Incorrect 8|<\BUBBLE>Serve Incorrect 8]]
+<\BUBBLE>"I struggle to perform."
+<name = ""> She frowns for a moment, though you can't tell if thats an actual
+frown or if her face naturally looks unhappy.
+<name = "Barista"> "Well clearly you're doing SOMETHING right, otherwise the
+coffee shop wouldn't have lasted this long.
+<name = ""> She wobbles for a moment.
+<name = "Barista"> "Anyways, I was reading my contract and it turns out that
+"mortal illness" isn't a good excuse to take time off. Seeing as you and I are
+basically the only employees, and I'd rather not kill myself doing my job in
+this state, I'll test you on another drink and then go back home. You seem
+pretty capable anyways, so I'm sure you'll survive the last 2 shifts before you
+leave.
+<name = ""> She thinks for a moment, and you swear you see her eyes glaze over
+for a second.
+<name = "Barista"> "How about this. Give me a Dark Roast with Hazlenut, Mocha,
+and extra soy milk - meaning more then 1 milk, if that wasn't clear."
+[[Serve Correct 8|<\BUBBLE>Serve Correct 8]]
+[[Serve Incorrect 8|<\BUBBLE>Serve Incorrect 8]]
+<\BUBBLE>Serve Correct 8
+<name = ""> She grabs the cup before catching herself from drinking it. She
+looks at the contents with an almost crazy look in her eyes.
+<name = "Barista"> "Yeah I can definitely tell that this is correct. The subtle
+coloring and the aroma definitely FEEL right. Good work Jerry."
+<name = ""> She hesitates a moment before setting the cup back down on the
+counter.
+<name = "Barista"> "Well. As we've agreed on, that's all I've got for you. I
+wish you luck for these last two days, but I have to return home.
+<name = ""> She wobbles back to the door, opening it up before getting knocked
+over again on the return. This time, she doesn't get back up.
+You sigh, pour out the coffee into the sink, and pick up the phone once more for
+the ambulance.
+Much like the first day, the arrival of paramedics causes you to have to close
+the coffee shop for the remaining day.
+So much for a successful last couple shifts.
+[[Night 5|<\BUBBLE>Night 5]]
+<\BUBBLE>Serve Incorrect 8
+<name = "">She picks up the cup before looking at its contents. After a moment,
+she frowns and looks you in the eyes.
+<name = "Barista"> "There's definitely something wrong with this. I'm not sure
+how you managed it, but the coffee is just...wrong. Whatever, this is just
+protocol anyways, I'm not drinking this, and I'm going home."
+<name = ""> She wobbles back to the door, opening it up before getting knocked
+over again on the return. This time, she doesn't get back up.
+You sigh, pour out the coffee into the sink, and pick up the phone once more for
+the ambulance.
+Much like the first day, the arrival of paramedics causes you to have to close
+the coffee shop for the remaining day.
+So much for a successful last couple shifts.
+[[Night 5|<\BUBBLE>Night 5]]

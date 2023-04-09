@@ -1,0 +1,141 @@
+<\BUBBLE>Day 3
+You wake up to an all too familiar ceiling - the cafe.
+I suppose working for 4 shifts in a row without going home or sleeping would
+tire you out, and eventually your body would be forced to sleep. Nothing a
+little coffee can't fix.
+Judging from the sunlight outside, you surmise that it's Day 3 of running the
+new branch. That means you're half way done!
+You walk over to the door and flip the sign to read "open" before moving back to
+behind the counter.
+Theres the occasional customer that comes in, and business goes rather smoothly.
+As you're cleaning up, the door opens and a new customer strolls up to the
+counter.
+[["Proceed"|<\BUBBLE>"Proceed"]]
+<\BUBBLE> Serve Correct 1
+<name = "Felix">"Ah yes EXCEPTIONAL work. This One is very impressed at your
+ability to perform your occupation effectively."
+<name = "">The fetus picks up the Espresso and dumps the contents into its tank,
+concentrating for a moment before the liquid disappears.
+<name = "Felix">"Ah. Well, upon the consumption of your bean soup, this One
+feels rejuvinated and satisfied."
+<name = "">Before you even have a chance to ask for payment, the fetus backs up
+at maximum speed. The doors open and you watch as the machine wheels off the
+side of the Cafe, before a propeller appears from its top and it flies away.
+What a strange encounter.
+[[Day 2|<\BUBBLE>Day 2]]
+<BUBBLE> Serve Incorrect 1
+<name = "Felix">"Hmm. This deviation from the order is... noted."
+<name = "">The fetus picks up the Espresso and dumps the contents into its tank,
+concentrating for a moment before the liquid disappears.
+<name = "Felix">"Ah. Well, upon the consumption of your bean soup, this One
+feels rejuvinated and satisfied."
+<name = "">Before you even have a chance to ask for payment, the fetus backs up
+at maximum speed. The doors open and you watch as the machine wheels off the
+side of the Cafe, before a propeller appears from its top and it flies away.
+What a strange encounter.
+[[Day 2|<\BUBBLE>Day 2]]
+<\BUBBLE>Serve Correct 2
+<name = "">The old man's expression seems to soften as he recieves the drink
+<name = "Gramps">"Terribly sorry sonny, I've been a bit rude to you. I assure
+you I am not normally this irritable, I've just been stressed recently."
+<name = "">He takes the drink, taking a moment to smell it before bringing it to
+his lips.
+<name = "Gramps">"You see, it's my dog Benedict. I got up one day and he was
+nowhere to be found. I suppose its foolish to ask, but you wouldn't have
+happened to see him during your time here, would you?"<choice>
+[[<\BUBBLE>"Can't say I have."]]
+[[<\BUBBLE>"But of course, he's one of our regulars!"]]
+<\BUBBLE>Serve Incorrect 2
+<name = "">The old man narrows his eyes before looking directly at you.
+He reaches into his coat pocket and removes a large pocketwatch, before putting
+it away.
+He takes the drink, taking a moment to smell it, curling his lip in distaste,
+before bringing it to his lips.
+<name = "Gramps">"This isn't what I ordered but I'll let it slide since you seem
+like a good kid. Now. Onto brass tacks. I'm currently lookiing for my dog,
+Benedict, as it seems as though he's wandered off somewhere. You wouldn't have
+happened to see him, would you?"<choice>
+[[<\BUBBLE>"Can't say I have."]]
+[[<\BUBBLE>"But of course, he's one of our regulars!"]]
+<\BUBBLE>Serve Correct 3
+The dog begins to aggressively drink the glass of water before looking back up
+at you
+<name = "Benedict">"That does indeed hit the spot."
+"I must say, your face does betray some form of puzzlement. Is something the
+matter?"<choice>
+[["There was an old man looking for you.|<\BUBBLE>"There was an old man looking
+for you"]]
+[["Nah just feeling tired thats all."|<\BUBBLE>"Nah, just feeling a little tired
+thats all."]]
+<\BUBBLE>Serve Incorrect 3
+The dog says(?) nothing but you can tell from the way its fur is standing up
+that its not happy.
+A small growl is heard before what could be called a mumble is spoken:
+<name = "Benedict">"Guess I should have figured. This industry is done for if I
+can't even get a glass of water right."
+<name = "">The dog gets up and begins walking out of the cafe. As soon as it
+does, you feel your knees give out and you stumble behind the counter.
+Regaining your balance, you find the dog nowhere to be seen.
+[[Day 3|<\BUBBLE>Day 3]]
+<\BUBBLE>"Proceed"
+You feel like you've met this individual before but you can't seem to remember
+where.
+<name = "???">"Hiya, could I get a Latte? You can put the name "Cien" on the
+cup."
+<name = ""> You begin to make the latte, but before you actually get to add any
+ingredients, Cien stops you.
+<name = "Cien"> "Could the latte leave out anything with THIS letter in them?
+Sorry, it's just a personal preference."
+<name = ""> Cien hands you a slip of paper with the letter "K" scribbled
+hastlily on it. Weird. Alright, so that rules out using Milk, and Dark Roast.
+How you're meant to make a latte without milk is definitely difficult, but not
+the most outlandish order you've recieved.
+As you begin to prepare the drink, you notice Cien staring intently at you.
+<choice>
+[["Is something the matter?" |<\BUBBLE>"Is something the matter?"]]
+[["Have we met before?" |<\BUBBLE>"Have we met before?"]]
+<\BUBBLE>"Is something the matter?"
+Cien looks surprised for a moment before collecting himself
+<name = "Cien"> "No not at all. Just very interested in the coffee-constructing
+procedure. Although now that you mention it, I did find it strange that you
+didn't question my distaste for words with THAT letter in them."
+[["The letter K-" |<\BUBBLE>"The letter K-"]]
+<\BUBBLE>"Have we met before?"
+Cien looks you up and down for a moment, pondering the thought before speaking.
+<name = "Cien"> "No, I think I'd remember someone as... unique... appearing as
+you. Your name is probably along the lines of Jerry right? I don't think I am
+familiar with any Jerrys.
+<name = ""> Before you can correct to ANOTHER PERSON that your name (probably)
+isn't Jerry, Cien interupts you.
+<name = Cien> "Oh yeah, I meant to ask. You don't seem very interested in the
+story behind my distaste of THAT letter"
+[["The letter K-" |<\BUBBLE>"The letter K-"]]
+<\BUBBLE>"The letter K-"
+<name = "Cien">"YES YES THAT letter."
+"Let me spin you a tale.. It was about 7 days ago. I was having a coffee at a
+certain coffee shop (the old branch), having a grand old time. It was then that
+a CREATURE appeared through a hole in the floor. Now normally I wouldn't care
+that much, but it tried to order coffee like it DIDNT just punch a hole through
+the floor. One thing lead to another and I barely escaped with my life."
+"That incident could only be attributed to things starting with THAT letter,
+hence the distaste."
+<name = ""> Gotta love the random infodump by some random stranger.
+<name = "Cien"> "Oh yeah hows my order coming along?"
+[[Serve Correct 4|<\BUBBLE>Serve Correct 4]]
+[[Serve Incorrect 4|<\BUBBLE>Serve Incorrect 4]]
+<\BUBBLE>Serve Correct 4
+<name = ""> You hand Cien the Latte, to which he takes a second to look at it
+before taking a sip.
+<name = "Cien"> "Cool, thanks!"
+<name = ""> Cien hands you the money for the drink before leaving the cafe. Upon
+stepping outside, his form seems to shimmer for a moment before he dissolves.
+People don't generally tend to do that, but hey at least he actually paid you.
+[[<\BUBBLE>Night 3]]
+<\BUBBLE>Serve Incorrect 4
+<name = "">
+Cien takes the drink, examining it close before taking a sip. His disgust is
+visible but he tries to hide it.
+<name = "Cien"> "This is definitely...something. Did you by any chance use an
+ingredient that had THAT letter in it?"
+"Sorry, but could you remake this? I don't know if I can stomach much more."
+[[<\BUBBLE>"The letter K-"]]

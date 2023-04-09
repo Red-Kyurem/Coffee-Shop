@@ -1,0 +1,111 @@
+<\BUBBLE>Day 4
+Walking back through the entrance, it's Day 4!
+You flip over the sign once again, taking your position behind the counter as
+usual.
+After a couple minutes, some customers start to arrive, though they were so
+normal that you can't quite recall any of their faces.
+For the first time this week, the cafe actually seems lively, so much so in fact
+that it makes you wish your coworker wasnt hospitalized.
+The surge in activity seems to die down around noon, with the cafe returning to
+its normal state, with a couple customers every couple of minutes.
+Eventually, you get a break in the action which you take as an opportunity to
+clean everything up, washing the cups and getting into the coffee machine.
+After cleaning up a cup that was stained with oil, you turn back towards the
+counter and see a familiar face.
+<name = "Gramps"> "Ah yes hello my friend. It is so very good to see you once
+more.
+<name = ""> Gramps has returned.
+[["Gramps!"|<\BUBBLE>"Gramps!"]]
+<\BUBBLE>"Gramps!"
+Gramps seems much happier since you last saw him on Day 2, taking the
+opportunity to stretch his arm across the counter and shake your hand.
+<name = "Gramps"> "I thought I would drop by once more since it has been oh so
+long since I've been here."
+<name = ""> He takes a moment to compose himself before he clears his throat.
+<name = "Gramps"> "I've just been in the most glorious moods recently, though
+I'm not sure why... it must have been the coffee you served me! I kid of course,
+but I will admit I did find myself wanting to come back for another drink. You
+do remember what I ordered last time right?<choice>
+<name = "">
+[["Of course I remember - it's only been 2 days." |<\BUBBLE>"Of course I
+remember - it's only been 2 days."]]
+[["Sorry sir, can't say I do" |<\BUBBLE>"Sorry sir, can't say I do"]]
+<\BUBBLE>"Sorry sir, can't say I do"
+Gramps chuckles
+<name = "Gramps"> "Ah, well I wouldn't expect you to. My order was Decaf with
+Hazelnut, though this time I would ask that you add 2% Milk on top of that,
+since I found it was a little too bitter last time.
+<name = ""> The change in order surprises you, as you assumed that Gramps was
+fine with the bitterness. Oh well, adding 2% Milk to the order isn't that big a
+deal.
+[[Serve Correct 6|<\BUBBLE>Serve Correct 6]]
+[[Serve Incorrect 6|<\BUBBLE>Serve Incorrect 6]]
+<\BUBBLE>"Of course I remember - it's only been 2 days."
+Gramps chuckles.
+<name = "Gramps"> "You surprise me! I was joking about you remembering the
+order, since I saw how busy it was this morning it would be silly for you to
+remember some old man's order.
+<name = ""> You think for a moment on what Gramps' order was back from Day 2...
+If you remember correctly it was a Decaf with Hazelnut.
+<name = "Gramps"> "If I could make one altercation to the old order, could I
+request that you also add 2% Milk? I felt like the order last time was a little
+bitter for my tastes."
+<name = ""> The change in order surprises you, as you assumed that Gramps was
+fine with the bitterness. Oh well, adding 2% Milk to the order isn't that big a
+deal.
+[[Serve Correct 6|<\BUBBLE>Serve Correct 6]]
+[[Serve Incorrect 6|<\BUBBLE>Serve Incorrect 6]]
+<\BUBBLE>Serve Correct 6
+Gramps takes the drink, smelling it for a moment before taking a sip.
+He closes his eyes, taking in the flavor.
+<name = "Gramps"> "Outstanding work. You've simply outdone yourself this time."
+<name = ""> He puts the drink down before looking into your eyes.
+<name = "Gramps"> "Do you remember what I asked you to do for me? About my dog,
+Benedict? Have you seen him since I asked you to keep a look out?"
+<name = ""> You nod.
+<name = "Gramps"> "Ah good. Well if you've seen him then it means he hasnt fled
+the country... You know what? I don't think I've ever actually told you why I
+need to find Benedict so badly. So as you've no doubt pieced together, I own
+Benedict. What this actually means is that I'm responsible for anything he does,
+or should I say DOESN'T do."
+<name = ""> He looks defeated for a moment.
+<name = "Gramps"> "He...uh... didn't pay his taxes and now I'm dealing with the
+consequences of his tax evasion.
+<name = ""> ...
+<name = "Gramps"> "..."
+<name = ""> A sudden noise causes both of you to look towards the door. Bendict
+has arrived.
+<name = "Gramps"> "BENNY, ITS TIME TO PAY YOUR TAXES!"
+<name = ""> Gramps breaks into a sprint towards Benedict, the latter of which
+turns to run away, causing both of them to exit the cafe.
+Well, at least they're reunited...sorta.
+[[Night 4|<\BUBBLE>Night 4]]
+<\BUBBLE>Serve Incorrect 6
+Gramps smells the cup for a moment, raising an eyebrow suspiciously before
+taking a sip.
+<name = "Gramps"> "Hmmmm..."
+<name = "You"> "Is something the matter?"
+<name = "Gramps"> "Its the drink. Somethings...off... about it."
+<name = ""> You surmise you messed up somewhere. Maybe you missed an ingrediant?
+Gramps furrows his brow for a moment before putting the cup down.
+<name = "Gramps"> "Ah whatever. Mistakes happen. There's always next time. More
+importantly.... do you remember what I asked you to do last time? With my dog,
+Benedict? Did you keep a look out for him as I asked?
+<name = ""> You nod.
+<name = "Gramps"> "Ah good. Well if you've seen him then it means he hasnt fled
+the country... You know what? I don't think I've ever actually told you why I
+need to find Benedict so badly. So as you've no doubt pieced together, I own
+Benedict. What this actually means is that I'm responsible for anything he does,
+or should I say DOESN'T do."
+<name = ""> He looks defeated for a moment.
+<name = "Gramps"> "He...uh... didn't pay his taxes and now I'm dealing with the
+consequences of his tax evasion.
+<name = ""> ...
+<name = "Gramps"> "..."
+<name = ""> A sudden noise causes both of you to look towards the door. Bendict
+has arrived.
+<name = "Gramps"> "BENNY, ITS TIME TO PAY YOUR TAXES!"
+<name = ""> Gramps breaks into a sprint towards Benedict, the latter of which
+turns to run away, causing both of them to exit the cafe.
+Well, at least they're reunited...sorta.
+[[Night 4|<\BUBBLE>Night 4]]

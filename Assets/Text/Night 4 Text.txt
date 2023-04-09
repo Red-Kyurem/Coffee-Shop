@@ -1,0 +1,81 @@
+<\BUBBLE>Night 4
+Feeling energized, you decide you're well enough to do another shift, so you
+buckle down and prepare for Night 4.
+The usual late night customers appear, though since most people don't tend to
+order coffee in the wee hours of night, there's not much for you to do.
+You decide to pass the time by fixating on a particular stain on the counter, of
+which you have no idea how it got there. It's color doesn't match any coffee
+you've served thus far, and all the machines aren't randomly leaving liquid on
+the counter.
+Before you can continue with this enthralling new development, the door swings
+open and judging from how big the figure is, you have no doubt who it is even
+before they step into the light. Felix is back.
+<name = "Felix"> "Y...ou th-th-there. This one-ne-ne-ne has rettttterned for
+another bevvvvverage."
+<name = ""> Felix is in pretty rough shape. The fetus part of Felix is perfectly
+fine, in fact it seems incredibly irritated that its mechanical body is
+malfunctioning as it is. The mechanical body has definitely seen better days.
+One of the body's arms have been ripped off and the singular wheel that it
+normally manuveurs with looks like a square.
+[["Everything Okay?" |<\BUBBLE>"Everything Okay?"]]
+<\BUBBLE>"Everything Okay?"
+Felix (the fetus not the body) looks at you with an unamused glare.
+<name = "Felix"> "Every-th-th-thing is just PEACHY as you can seeeeeeeee. This
+One has simply decided to take his cr-cr-cr-cr-craft for a JOYRIDE, causing
+unfixable damage. Nothing to worry your simple MIND ab-about."
+<name = ""> Thinking back on it, you probably shouldn't have served caffeine to
+a fetus, but hey a customer is a customer. Though, Felix never did pay you
+either. Why DID you serve Felix anyways?
+<name = "Felix"> "Regardless of this one's current situuuuuation, one cannot
+stop oneself from returning for another beverage. Especially when one's escape
+pod is fueled pri---marily by beans.
+[["Okay...?" |<\BUBBLE>"Okay...?"]]
+<\BUBBLE>"Okay...?"
+<name = "Felix"> "Wonderful. Well in-in-in-in that case, this one requests your
+finest-"
+<name = ""> Before Felix is able to give you his order, the speaker he normally
+"speaks" from, violently exudes sparks before it powers down. The Fetus lets out
+a miriad of bubbles in frustration before producing a wrench somehow and banging
+the bottom of its tank.
+<name = "Felix"> "DARK....MOCHA... EXTRA 2%"
+<name = ""> With those 4 words, the speaker finally gives out. Felix raises one
+more defiant wrench slam before ultimately giving up. He then turns in his tank
+to look at you with crossed arms. Might as well get the order done so Felix can
+repair his body. You recall the machine requesting a Dark Roast, with Mocha and
+Extra 2% Milk.
+[[Serve Correct 7|<\BUBBLE>Serve Correct 7]]
+[[Serve Incorrect 7|<\BUBBLE>Serve Incorrect 7]]
+<\BUBBLE>Serve Correct 7
+You physically have to pour the drink into Felix since his body is unresponsive.
+With the tank mimicking the color of the drink for a couple moments before
+returning to normal, Felix looks pleased for a moment, trying to move the metal
+body once more. The refuel was much too late unfortunately, as the body
+collapses in a heap.
+Felix is shocked for a moment, but looks at you with a thankful glance. He then
+reequips his wrench and smacks the top of his tank, causing the tank to detach
+from the body and produce its propeller once more. Felix flies towards and out
+the doors.
+You feel like you did the same thing, but now you have this massive scrap heap
+you have to sweep away.
+Moving towards it to clean it up, you notice the socket where Felix was seated
+in his tank is filled with gold coins.
+Looks like Felix paid for his drinks after all.
+[[Day 5 |<\BUBBLE>Day 5]]
+<\BUBBLE>Serve Incorrect 7
+You move forward to pour the drink into Felix's Tank. After dissolving for a
+second within the tank, Felix looks at you with a disapointed look. You surmise
+you must have messed up the drink in some regards.
+Felix produces his wrench once more and smacks a large red button within his
+tank. The tank disconnects from the main body and contorts into a smaller ball
+form. Felix rolls away towards the door where he waits outside for a moment.
+After a couple minutes, it would appear what he was trying to do was hail a Sky
+Taxi.
+When the taxi arrives, Felix looks back towards you with the same disapointed
+look before leaving on the taxi.
+You move to clean up the rubble of Felix's body, but before you can, the body
+smokes violently and begins melting through the floor.
+As it falls through the floor, you catch a glimmer of gold, suggesting that
+Felix was intending to pay you for the drinks but changed his mind after you
+messed up his drink.
+Wonder why the cafe keeps attracting customers that punch holes in the floor...
+[[Day 5|<\BUBBLE>Day 5]]
