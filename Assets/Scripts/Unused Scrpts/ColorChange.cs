@@ -4,28 +4,21 @@ using UnityEngine;
 
 public class ColorChange : MonoBehaviour
 {
-    public Color color;
-    public MeshRenderer mesh;
+    public Color[] colors;
+    public SpriteRenderer mesh;
 
+    public static ColorChange instance;
 
-
-
-    public enum Fill
+     private void Awake()
     {
-        Light,
-        Dark,
-        Caramel,
-        Mocha
-    }
-
-    private void Start()
-    {
+        instance = this;
+        mesh = GetComponent<SpriteRenderer>();
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeColor(int index)
     {
-        
+        Color color = colors[index];
+        mesh.color = color;
     }
 }
