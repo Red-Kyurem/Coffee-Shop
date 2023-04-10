@@ -26,4 +26,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Day 2.unity
     guid: 350af7c04c962314ea1a78162c81f524
+  - enabled: 1
+    path: Assets/Scenes/Night 3.unity
+    guid: fbe03e49f470753429b35365c384822e
+  - enabled: 1
+    path: Assets/Scenes/Day 3.unity
+    guid: 38e80cff4fb297f4daf6c117fa8f84a6
+  - enabled: 1
+    path: Assets/Scenes/Day 4.unity
+    guid: ea7d04ae9bec28e4f86fef83773e44ec
+  - enabled: 1
+    path: Assets/Scenes/Day 5.unity
+    guid: 0df6cd7965391b848b18756c07e961fe
+  - enabled: 1
+    path: Assets/Scenes/Night 4.unity
+    guid: f30d30d23eadf3847baef720745dec2c
+  - enabled: 1
+    path: Assets/Scenes/Night 5.unity
+    guid: 22b68e8c76ba854429c8f2860c904731
+  - enabled: 1
+    path: Assets/Scenes/The End.unity
+    guid: 21119d20ef681884e91b1eafeb72dc90
   m_configObjects: {}
