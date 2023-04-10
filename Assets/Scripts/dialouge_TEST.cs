@@ -43,9 +43,14 @@ public class dialouge_TEST : MonoBehaviour
     public float timeElapsed;
 
     public GameObject blackScreen;
+
+    public GameObject PickupManager;
     // Start is called before the first frame update
     void Start()
     {
+        PickupManager = GameObject.Find("PickupManager");
+        PickupManager.GetComponent<MousePickup>().canPickUp = false;
+
         string[] dialougeText = dialougeFile.ToString().Split('\n');
         int numOfBubbles = 0;
         for (int sentenceNum = 0; sentenceNum < dialougeText.Length; sentenceNum++)
@@ -313,12 +318,14 @@ public class dialouge_TEST : MonoBehaviour
                         hideTextBox = true;
                         dialogTextBoxImage.SetActive(false);
                         nameTextBoxImage.SetActive(false);
+                        PickupManager.GetComponent<MousePickup>().canPickUp = true;
                     }
                     else if (hideTextBox)
                     { 
                         hideTextBox = false;
                         dialogTextBoxImage.SetActive(true);
                         nameTextBoxImage.SetActive(true);
+                        PickupManager.GetComponent<MousePickup>().canPickUp = false;
                     }
 
                 }

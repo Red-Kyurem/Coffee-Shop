@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -538,6 +538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Mocha
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &56307682
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2534,7 +2536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &446609658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2616,6 +2618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Decaf
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &453091670
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3724,7 +3728,10 @@ MonoBehaviour:
   isSentenceFilledIn: 0
   isChoiceAnswered: 1
   hideTextBox: 0
+  chosenChoiceName: N/A
+  timeElapsed: 0
   blackScreen: {fileID: 1433288553}
+  PickupManager: {fileID: 0}
 --- !u!4 &566827771
 Transform:
   m_ObjectHideFlags: 0
@@ -6410,6 +6417,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Vanilla
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &905208051
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8690,6 +8699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Hazlenut
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &1317926727
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9332,7 +9343,6 @@ MonoBehaviour:
   orderStrings: []
   hasEnteredButNotActivated: 0
   timeElapsed: 0
-  timeStamp: 
   correctOrderName: 
   incorrectOrderName: 
 --- !u!114 &1430964934
@@ -9940,7 +9950,6 @@ MonoBehaviour:
   - Soy Milk
   hasEnteredButNotActivated: 0
   timeElapsed: 0
-  timeStamp: 
   correctOrderName: <\BUBBLE>Serve
   incorrectOrderName: <\BUBBLE>ServeIncorrect
 --- !u!65 &1544053926
@@ -10861,6 +10870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Dark
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &1626151742
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11242,6 +11253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Blonde
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &1674387171
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ TagManager:
   - Cup
   - In-Game Button
   - Splash
+  - MousePickup
   layers:
   - Default
   - TransparentFX
