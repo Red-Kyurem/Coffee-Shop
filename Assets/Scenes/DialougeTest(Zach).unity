@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -919,6 +919,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Mocha
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &189169996
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1752,7 +1754,7 @@ GameObject:
   - component: {fileID: 428539863}
   m_Layer: 0
   m_Name: Splash
-  m_TagString: Untagged
+  m_TagString: Splash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2317,6 +2319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Hazlenut
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!1 &508101846
 GameObject:
   m_ObjectHideFlags: 0
@@ -9193,6 +9197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Decaf
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!1 &1565485197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10079,6 +10085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Blonde
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!1 &1710488809
 GameObject:
   m_ObjectHideFlags: 0
@@ -11741,6 +11749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Dark
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!1 &1935907839
 GameObject:
   m_ObjectHideFlags: 0
@@ -13283,6 +13293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IngredientString: Vanilla
   cup: {fileID: 0}
+  pressedButtonColor: {r: 1, g: 0.33, b: 0.33, a: 1}
+  tCoffeePour: {fileID: 0}
 --- !u!64 &2038483737
 MeshCollider:
   m_ObjectHideFlags: 0

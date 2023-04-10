@@ -13,6 +13,7 @@ TagManager:
   - SpawnItem
   - Cup
   - In-Game Button
+  - Splash
   layers:
   - Default
   - TransparentFX
