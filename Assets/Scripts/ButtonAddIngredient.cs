@@ -9,8 +9,10 @@ public class ButtonAddIngredient : MonoBehaviour
     private Color buttonColor;
     public Color pressedButtonColor = new Color(1, 0.33f, 0.33f);
     public GameObject tCoffeePour;
+    AudioSource pour;
     void Awake()
     {
+        pour = GetComponent<AudioSource>();
         tCoffeePour = GameObject.FindGameObjectWithTag("Splash");
     }
         // Start is called before the first frame update
@@ -37,7 +39,8 @@ public class ButtonAddIngredient : MonoBehaviour
             if (IngredientString == "Blonde" || IngredientString == "Decaf" || IngredientString == "Dark") 
             { 
                 tCoffeePour.SetActive(true); 
-                Invoke("HideSplash", 0.5f); 
+                Invoke("HideSplash", 0.5f);
+                pour.Play();
             }
             
 
