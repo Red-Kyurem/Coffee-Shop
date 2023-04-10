@@ -2,10 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coffee : MonoBehaviour
+public class ColorChange : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Color color;
+    public MeshRenderer mesh;
+
+
+
+
+    public enum Fill
+    {
+        Light,
+        Dark,
+        Caramel,
+        Mocha
+    }
+
+    private void Start()
     {
         
     }
