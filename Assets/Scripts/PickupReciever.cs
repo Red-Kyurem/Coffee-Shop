@@ -47,6 +47,8 @@ public class PickupReciever : MonoBehaviour
                 other.GetComponent<Rigidbody>().velocity = Vector3.zero;
             }
 
+
+
             // ADD TELEMETRY HERE (ObjectUsed)
             var ingredientData = new TelemetryStructs.objectUsedData()
             {
@@ -54,10 +56,29 @@ public class PickupReciever : MonoBehaviour
                 objectRecievedName = other.name
             };
             TelemetryLogger.Log(this, "Object Used", ingredientData);
+            // End of TELEMETRY
+
+
+
 
             if (transform.parent && transform.parent.gameObject.GetComponent<CupContents>())
             {
+
+                if (transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings.Count == 0)
+                {
+                    ColorChange.instance.SetStartColor(false);
+                }
+                else if (ColorChange.instance.index >= 3)
+                {
+                    ColorChange.instance.ResetIndex();
+                    ColorChange.instance.SetStartColor(false);
+                }
+                else ColorChange.instance.ChangeColor(true);
+
                 transform.parent.gameObject.GetComponent<CupContents>().ingredientStrings.Add(other.gameObject.GetComponent<ItemValue>().IngredientString);
+                
+
+
 
                 // ADD TELEMETRY HERE (IngredientAdded)
                 string ingredientsCombinedString = string.Join(", ", other.gameObject.GetComponent<ItemValue>().IngredientString);
@@ -68,7 +89,7 @@ public class PickupReciever : MonoBehaviour
                     cupContents = cupContentsCombinedString
                 };
                 TelemetryLogger.Log(this, "Add Ingredient", data);
-
+                // End of TELEMETRY
 
             }
 

@@ -10,6 +10,8 @@ public class ButtonAddIngredient : MonoBehaviour
     public Color pressedButtonColor = new Color(1, 0.33f, 0.33f);
     public GameObject tCoffeePour;
     AudioSource pour;
+
+
     void Awake()
     {
         pour = GetComponent<AudioSource>();
@@ -32,6 +34,19 @@ public class ButtonAddIngredient : MonoBehaviour
 
         if (cup != null && cup.GetComponent<PickupableObject>().objectType == ObjectType.Cup)
         {
+
+            if (cup.GetComponent<CupContents>().ingredientStrings.Count == 0)
+            {
+                ColorChange.instance.SetStartColor(true);
+            }
+            else if (ColorChange.instance.index <= 0)
+            {
+                ColorChange.instance.ResetIndex();
+                ColorChange.instance.SetStartColor(true);
+            }
+            else ColorChange.instance.ChangeColor(false);
+
+
             cup.GetComponent<CupContents>().ingredientStrings.Add(IngredientString);
             
             GetComponent<Renderer>().material.color = pressedButtonColor;
@@ -42,6 +57,8 @@ public class ButtonAddIngredient : MonoBehaviour
                 Invoke("HideSplash", 0.5f);
                 pour.Play();
             }
+
+            
             
 
             // ADD TELEMETRY HERE (IngredientAdded)
@@ -54,7 +71,7 @@ public class ButtonAddIngredient : MonoBehaviour
             };
 
             TelemetryLogger.Log(this, "Add Ingredient", data);
-
+            //End of TELEMETRY
         }
 
     }

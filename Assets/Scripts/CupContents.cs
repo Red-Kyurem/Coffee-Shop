@@ -5,16 +5,25 @@ using UnityEngine;
 public class CupContents : MonoBehaviour
 {
     public List<string> ingredientStrings;
-    // Start is called before the first frame update
-    void Start()
+
+    GameObject cupFill;
+
+    private void Start()
     {
-        
+        cupFill = transform.GetChild(1).gameObject;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+       if( ingredientStrings.Count == 0)
+        {
+            cupFill.SetActive(false);
+        }
+
+        else
+        {
+            cupFill.SetActive(true);
+        }
     }
 
     public void ResetInGameButtons()
