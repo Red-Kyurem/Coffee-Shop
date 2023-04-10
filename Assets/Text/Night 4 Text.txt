@@ -1,4 +1,5 @@
-<\BUBBLE>Night 4
+<\BUBBLE>START
+@Night 4@
 Feeling energized, you decide you're well enough to do another shift, so you
 buckle down and prepare for Night 4.
 The usual late night customers appear, though since most people don't tend to
@@ -60,7 +61,7 @@ you have to sweep away.
 Moving towards it to clean it up, you notice the socket where Felix was seated
 in his tank is filled with gold coins.
 Looks like Felix paid for his drinks after all.
-[[Day 5 |<\BUBBLE>Day 5]]
+<changeScene=Day 5>
 <\BUBBLE>Serve Incorrect 7
 You move forward to pour the drink into Felix's Tank. After dissolving for a
 second within the tank, Felix looks at you with a disapointed look. You surmise
@@ -78,4 +79,4 @@ As it falls through the floor, you catch a glimmer of gold, suggesting that
 Felix was intending to pay you for the drinks but changed his mind after you
 messed up his drink.
 Wonder why the cafe keeps attracting customers that punch holes in the floor...
-[[Day 5|<\BUBBLE>Day 5]]
+<changeScene=Day 5>

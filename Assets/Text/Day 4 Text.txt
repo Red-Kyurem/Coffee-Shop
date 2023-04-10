@@ -1,4 +1,5 @@
-<\BUBBLE>Day 4
+<\BUBBLE>START
+@Day 4@
 Walking back through the entrance, it's Day 4!
 You flip over the sign once again, taking your position behind the counter as
 usual.
@@ -79,7 +80,8 @@ has arrived.
 <name = ""> Gramps breaks into a sprint towards Benedict, the latter of which
 turns to run away, causing both of them to exit the cafe.
 Well, at least they're reunited...sorta.
-[[Night 4|<\BUBBLE>Night 4]]
+<changeScene=Night 4>
+//
 <\BUBBLE>Serve Incorrect 6
 Gramps smells the cup for a moment, raising an eyebrow suspiciously before
 taking a sip.
@@ -108,4 +110,4 @@ has arrived.
 <name = ""> Gramps breaks into a sprint towards Benedict, the latter of which
 turns to run away, causing both of them to exit the cafe.
 Well, at least they're reunited...sorta.
-[[Night 4|<\BUBBLE>Night 4]]
+<changeScene=Night 4>

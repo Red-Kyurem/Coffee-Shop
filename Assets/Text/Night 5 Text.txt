@@ -1,4 +1,5 @@
-<\BUBBLE>Night 5
+<\BUBBLE>START
+@Night 5@
 It's the last shift at the new branch.
 You look around the coffee shop, embedding its appearence into your mind.
 While it looks similar to the old branch, there's definitely something unique
@@ -33,7 +34,7 @@ You finish the coffee and head over to the door, flipping the sign over one
 final time.
 You get on your sky scooter, and begin the long drive back home looking back one
 final time...
-[[THE END|<\BUBBLE>THE END]]
+<changeScene=The End>
 <\BUBBLE>Serve Incorrect FINAL
 You taste the coffee you made for yourself and have to stop yourself from
 gagging.
@@ -42,4 +43,4 @@ Regardless, you feel you'll finish the cup anyways.
 You head over to the door, flipping the sign over one final time.
 You get on your sky scooter, and begin the long drive back home, not taking the
 time to look back...
-[[THE END|<\BUBBLE>THE END]]
+<changeScene=The End>

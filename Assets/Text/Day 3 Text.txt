@@ -1,4 +1,5 @@
-<\BUBBLE>Day 3
+<\BUBBLE>START
+@Day 3@
 You wake up to an all too familiar ceiling - the cafe.
 I suppose working for 4 shifts in a row without going home or sleeping would
 tire you out, and eventually your body would be forced to sleep. Nothing a
@@ -130,7 +131,8 @@ before taking a sip.
 <name = ""> Cien hands you the money for the drink before leaving the cafe. Upon
 stepping outside, his form seems to shimmer for a moment before he dissolves.
 People don't generally tend to do that, but hey at least he actually paid you.
-[[<\BUBBLE>Night 3]]
+<changeScene=Night 3>
+//
 <\BUBBLE>Serve Incorrect 4
 <name = "">
 Cien takes the drink, examining it close before taking a sip. His disgust is

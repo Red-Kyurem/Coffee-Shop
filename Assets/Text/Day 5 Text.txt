@@ -1,4 +1,5 @@
-<\BUBBLE>Day 5
+<\BUBBLE>START
+@Day 5@
 At long last, it's Day 5. You've done 8 shifts so far, and this is the last day
 shift.
 By now, you're pretty comfortable running the cafe, and its clear that word is
@@ -76,7 +77,7 @@ the ambulance.
 Much like the first day, the arrival of paramedics causes you to have to close
 the coffee shop for the remaining day.
 So much for a successful last couple shifts.
-[[Night 5|<\BUBBLE>Night 5]]
+<changeScene=Night 5>
 <\BUBBLE>Serve Incorrect 8
 <name = "">She picks up the cup before looking at its contents. After a moment,
 she frowns and looks you in the eyes.
@@ -90,4 +91,4 @@ the ambulance.
 Much like the first day, the arrival of paramedics causes you to have to close
 the coffee shop for the remaining day.
 So much for a successful last couple shifts.
-[[Night 5|<\BUBBLE>Night 5]]
+<changeScene=Night 5>

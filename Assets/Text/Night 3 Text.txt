@@ -1,4 +1,5 @@
-<\BUBBLE>Night 3
+<\BUBBLE>START
+@Night 3@
 Night 3 means only 2 more to go.
 By this point, you've taken your mental health into consideration, and closed
 the store for a bit in order to rest up. You've been working 5 shifts in a row
@@ -70,7 +71,8 @@ contorted.
 shop, and, upon looking down into the hole in the ground, you see that Kevin is
 no longer there.
 Here's hoping that he didn't mean what he said.
-[[Day 4|<\BUBBLE>Day 4]]
+<changeScene=Day 4>
+//
 <\BUBBLE>I just noticed where I know you from.
 <name = "Kevin"> YOU DO?! I mean... you do?
 <name = "You"> "Yeah, you're that tentacle from the old coffee shop."
@@ -97,8 +99,9 @@ Thanks for hearing me out."
 <name = ""> Kevin takes a bow, before exiting back under the floor.
 Definitely gonna be needing to fix that hole, but you feel like you did the
 right thing hearing Kevin out.
-[[Day 4|<\BUBBLE>Day 4]]
+<changeScene=Day 4>
+//
 <\BUBBLE>*decide not to question after all.*
 You decide it's better to not "poke the bear" so to speak.
 You recieve payment from Kevin, before he disappears looking satisfied.
-[[Day 4|<\BUBBLE>Day 4]]
+<changeScene=Day 4>
