@@ -220,7 +220,18 @@ public class dialouge_TEST : MonoBehaviour
                     // skip the number and '>' part of the sentence
                     charCount += substringLength;
                 }
+                // pauses/unpauses advancing TextBox 
+                else if ((sentence.Length - charCount) >= 15 && sentence.Substring(charCount, 15) == "<pauseDialouge>")
+                {
+                    // skip the '<pauseDialouge>' part of the sentence from displaying in the textbox
+                    charCount += 15;
 
+                    if (!isChoiceAnswered)
+                    { isChoiceAnswered = true; }
+                    else if (isChoiceAnswered)
+                    { isChoiceAnswered = false; }
+
+                }
                 // pauses the text for an amount of time
                 else if ((sentence.Length - charCount) >= 6 && sentence.Substring(charCount, 6) == "<pause")
                 {
@@ -290,18 +301,7 @@ public class dialouge_TEST : MonoBehaviour
                     // skip the name and '>' part of the sentence
                     charCount += substringLength;
                 }
-                // pauses/unpauses advancing TextBox 
-                else if ((sentence.Length - charCount) >= 15 && sentence.Substring(charCount, 15) == "<pauseDialouge>")
-                {
-                    // skip the '<pauseDialouge>' part of the sentence from displaying in the textbox
-                    charCount += 15;
-
-                    if (!isChoiceAnswered)
-                    { isChoiceAnswered = true; }
-                    else if (isChoiceAnswered)
-                    { isChoiceAnswered = false; }
-
-                }
+               
                 // hides/unhides TextBox 
                 else if ((sentence.Length - charCount) >= 12 && sentence.Substring(charCount, 12) == "<toggleHide>")
                 {
