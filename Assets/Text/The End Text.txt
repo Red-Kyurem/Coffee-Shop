@@ -1,4 +1,9 @@
 <\BUBBLE>START
 @The End@
-THANKS FOR PLAYING
-CREDITS:
+"Thanks for working at our coffee shop, rest assured your experience will be incredibly helpful in researching our next human torture device!"
+"Special thanks to our creative direction team: Liam McGrath, Lucas Diab and Erika Bong."
+"As well as our world renowned mad scientist Zachary Taylor."
+"All hail the Lord Kean Ho."
+   
+Thanks for playing!
+<changeScene=MainGame>

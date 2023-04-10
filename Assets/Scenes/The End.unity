@@ -10682,7 +10682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ded6c99e4863ab4f9bee7d60936216f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialougeFile: {fileID: 4900000, guid: dc6e3cc6737ab844099ffe9e4489dd24, type: 3}
+  dialougeFile: {fileID: 4900000, guid: 5698673a4f2c3364fa5879de93e1c88c, type: 3}
   choiceButton: {fileID: 4168772143378831682, guid: 7998506752939cf428a028a73daee57b, type: 3}
   buttonPos: {fileID: 781276132}
   textSpeed: 0
