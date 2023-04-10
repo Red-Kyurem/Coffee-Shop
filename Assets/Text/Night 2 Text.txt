@@ -77,7 +77,7 @@ You pour yourself a cup of coffee in an attempt to stay awake, but you just cant
 Suddenly, you see what looks like a dog with a hat sitting at the counter. Looking at its collar, you see the name "Benedict".
 <name=Benedict>"Excuse me, could I please get some service over here?"
 <name=>Generally, dogs don't speak, so you surmise that your tiredness is causing you to hallucinate. Nonetheless, you humor the hallucination and approach the counter.
-<name=Benedict>"Good evening. I understand its a strange order, especially at this time of night, but could I have a glass with @@all the milk you have@@? I'm simply parched."
+<name=Benedict>"Good evening. I understand its a strange order, especially at this time of night, but could I have a glass with @@one of each the milk you have@@? I'm simply parched."
 //
 //
 //
@@ -147,15 +147,22 @@ He takes the drink, taking a moment to smell it before bringing it to his lips.
 [["But of course, he's one of our regulars!"|<\BUBBLE>"But of course, he's one of our regulars!"]]
 <\BUBBLE>Serve Correct 3
 <pauseDialouge> <toggleHide> The dog begins to aggressively drink the glass of milk before looking back up at you
-<name=Benedict>"That does indeed hit the spot."
-"I must say, your face does betray some form of puzzlement. Is something the matter?" <choice>
+<name=Benedict>"That does indeed hit the spot. though I do feel that something is missing."
+do you by any chance have Oat Milk on hand?
+<name=> you shake your head side to side. you dont remember seeing any in storage.
+<name=Benedict>"ah, then here. take some of mine."
+<name=> The dog paws(?) you a cup of Oat Milk from... somewhere.
+<name=Benedict>"I must say, your face does betray some form of puzzlement. Is something the matter?" <choice>
 [["There was an old man looking for you.|<\BUBBLE>"There was an old man looking for you"]]
 [["Nah just feeling tired thats all."|<\BUBBLE>"Nah, just feeling a little tired thats all."]]
 <\BUBBLE>Serve Incorrect 3
 <pauseDialouge> <toggleHide> The dog says(?) nothing but you can tell from the way its fur is standing up that its not happy.
 A small growl is heard before what could be called a mumble is spoken:
 <name=Benedict>"Guess I should have figured. This industry is done for if I can't even get a glass of milk right."
-<name=>The dog gets up and begins walking out of the cafe. As soon as it does, you feel your knees give out and you stumble behind the counter.
+did you even put oat milk in my cup!?"
+<name=> you shake your head side to side. you dont remember seeing any in storage, so you couldnt've put any in.
+<name=Benedict>"take some of mine. you'll need it if you want to make a *correct* cup of milk."
+<name=>The dog paws(?) you a cup of Oat Milk from... somewhere and begins walking out of the cafe. As soon as it does, you feel your knees give out and you stumble behind the counter.
 Regaining your balance, you find the dog nowhere to be seen.
 <changeScene=MainGame>
 <\BUBBLE>Day 3

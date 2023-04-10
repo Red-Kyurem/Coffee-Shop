@@ -26,10 +26,8 @@ long since I've been here."
 <name = "Gramps"> "I've just been in the most glorious moods recently, though
 I'm not sure why... it must have been the coffee you served me! I kid of course,
 but I will admit I did find myself wanting to come back for another drink. You
-do remember what I ordered last time right?<choice>
-<name = "">
-[["Of course I remember - it's only been 2 days." |<\BUBBLE>"Of course I
-remember - it's only been 2 days."]]
+do remember what I ordered last time right? <choice> 
+[["Of course I remember - it's only been 2 days." |<\BUBBLE>"Of course I remember - it's only been 2 days."]]
 [["Sorry sir, can't say I do" |<\BUBBLE>"Sorry sir, can't say I do"]]
 <\BUBBLE>"Sorry sir, can't say I do"
 Gramps chuckles
@@ -39,6 +37,11 @@ since I found it was a little too bitter last time.
 <name = ""> The change in order surprises you, as you assumed that Gramps was
 fine with the bitterness. Oh well, adding 2% Milk to the order isn't that big a
 deal.
+<toggleHide> <pauseDialouge> 
+//
+//
+//
+
 [[Serve Correct 6|<\BUBBLE>Serve Correct 6]]
 [[Serve Incorrect 6|<\BUBBLE>Serve Incorrect 6]]
 <\BUBBLE>"Of course I remember - it's only been 2 days."
@@ -54,10 +57,15 @@ bitter for my tastes."
 <name = ""> The change in order surprises you, as you assumed that Gramps was
 fine with the bitterness. Oh well, adding 2% Milk to the order isn't that big a
 deal.
+<toggleHide> <pauseDialouge> 
+//
+//
+//
+
 [[Serve Correct 6|<\BUBBLE>Serve Correct 6]]
 [[Serve Incorrect 6|<\BUBBLE>Serve Incorrect 6]]
 <\BUBBLE>Serve Correct 6
-Gramps takes the drink, smelling it for a moment before taking a sip.
+<pauseDialouge> <toggleHide> Gramps takes the drink, smelling it for a moment before taking a sip.
 He closes his eyes, taking in the flavor.
 <name = "Gramps"> "Outstanding work. You've simply outdone yourself this time."
 <name = ""> He puts the drink down before looking into your eyes.
@@ -83,7 +91,7 @@ Well, at least they're reunited...sorta.
 <changeScene=Night 4>
 //
 <\BUBBLE>Serve Incorrect 6
-Gramps smells the cup for a moment, raising an eyebrow suspiciously before
+<pauseDialouge> <toggleHide> Gramps smells the cup for a moment, raising an eyebrow suspiciously before
 taking a sip.
 <name = "Gramps"> "Hmmmm..."
 <name = "You"> "Is something the matter?"

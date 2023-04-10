@@ -35,13 +35,15 @@ come. Yessir, just good ol Kevin the completely normal human being, who is
 definitely not a tentacle.
 <name = ""> Right. Anyways you get your notepad out in order to eagerly take
 "Kevin"'s order.
-<name = "Kevin"> Alright so... uh... could I get a decaf espresso with extra soy
-milk. And I do mean EXTRA. Like at least 4 cups added.
-<choice>
+<name = "Kevin"> Alright so... uh... could I get a decaf espresso with extra soy milk. 
+And I do mean EXTRA. Like at least 4 cups added.
+<toggleHide> <pauseDialouge>  
+//
+//
 [[Serve Correct 3|<\BUBBLE>Serve Correct 5]]
 [[Serve Incorrect 3|<\BUBBLE>Serve Incorrect 5]]
 <\BUBBLE>Serve Correct 5
-<name = ""> Kevin recieves the coffee, retracting into the ground as a very
+<pauseDialouge> <toggleHide> <name = ""> Kevin recieves the coffee, retracting into the ground as a very
 audible slurping noise is heard from below the shop. He reappears, minus one cup
 and holding an extraordinairly small wallet.
 <name = "Kevin"> "So.. uh... funny story. I was drinking the coffee you gave me
@@ -54,7 +56,7 @@ from.]]
 [[*decide not to question after all.*|<\BUBBLE>*decide not to question after
 all.*]]
 <\BUBBLE>Serve Incorrect 5
-<name = ""> Kevin takes the cup, disappearing below the ground before
+<pauseDialouge> <toggleHide> <name = ""> Kevin takes the cup, disappearing below the ground before
 reappearing with the cup, and his disguise goggles contorted so they look
 "angry"
 <name = "Kevin"> "Is this some sort of joke?? I'm pretty sure my order was

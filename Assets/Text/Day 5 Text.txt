@@ -40,7 +40,8 @@ leave.
 <name = ""> She thinks for a moment, and you swear you see her eyes glaze over
 for a second.
 <name = "Barista"> "How about this. Give me a Dark Roast with Hazlenut, Mocha,
-and extra soy milk - meaning more then 1 milk, if that wasn't clear."
+and extra oat milk - meaning more then 1 milk, if that wasn't clear."
+<pauseDialouge> <toggleHide> 
 [[Serve Correct 8|<\BUBBLE>Serve Correct 8]]
 [[Serve Incorrect 8|<\BUBBLE>Serve Incorrect 8]]
 <\BUBBLE>"I struggle to perform."
@@ -58,11 +59,11 @@ leave.
 <name = ""> She thinks for a moment, and you swear you see her eyes glaze over
 for a second.
 <name = "Barista"> "How about this. Give me a Dark Roast with Hazlenut, Mocha,
-and extra soy milk - meaning more then 1 milk, if that wasn't clear."
+and extra oat milk - meaning more then 1 milk, if that wasn't clear."
 [[Serve Correct 8|<\BUBBLE>Serve Correct 8]]
 [[Serve Incorrect 8|<\BUBBLE>Serve Incorrect 8]]
 <\BUBBLE>Serve Correct 8
-<name = ""> She grabs the cup before catching herself from drinking it. She
+<pauseDialouge> <toggleHide> <name = ""> She grabs the cup before catching herself from drinking it. She
 looks at the contents with an almost crazy look in her eyes.
 <name = "Barista"> "Yeah I can definitely tell that this is correct. The subtle
 coloring and the aroma definitely FEEL right. Good work Jerry."
@@ -75,11 +76,11 @@ over again on the return. This time, she doesn't get back up.
 You sigh, pour out the coffee into the sink, and pick up the phone once more for
 the ambulance.
 Much like the first day, the arrival of paramedics causes you to have to close
-the coffee shop for the remaining day.
+the coffee shop for some time.
 So much for a successful last couple shifts.
 <changeScene=Night 5>
 <\BUBBLE>Serve Incorrect 8
-<name = "">She picks up the cup before looking at its contents. After a moment,
+<pauseDialouge> <toggleHide> <name = "">She picks up the cup before looking at its contents. After a moment,
 she frowns and looks you in the eyes.
 <name = "Barista"> "There's definitely something wrong with this. I'm not sure
 how you managed it, but the coffee is just...wrong. Whatever, this is just
@@ -89,6 +90,6 @@ over again on the return. This time, she doesn't get back up.
 You sigh, pour out the coffee into the sink, and pick up the phone once more for
 the ambulance.
 Much like the first day, the arrival of paramedics causes you to have to close
-the coffee shop for the remaining day.
+the coffee shop for some time.
 So much for a successful last couple shifts.
 <changeScene=Night 5>

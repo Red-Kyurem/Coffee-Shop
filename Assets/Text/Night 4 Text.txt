@@ -44,10 +44,13 @@ more defiant wrench slam before ultimately giving up. He then turns in his tank
 to look at you with crossed arms. Might as well get the order done so Felix can
 repair his body. You recall the machine requesting a Dark Roast, with Mocha and
 Extra 2% Milk.
+<pauseDialouge> <toggleHide> 
+//
+//
 [[Serve Correct 7|<\BUBBLE>Serve Correct 7]]
 [[Serve Incorrect 7|<\BUBBLE>Serve Incorrect 7]]
 <\BUBBLE>Serve Correct 7
-You physically have to pour the drink into Felix since his body is unresponsive.
+<pauseDialouge> <toggleHide> You physically have to pour the drink into Felix since his body is unresponsive.
 With the tank mimicking the color of the drink for a couple moments before
 returning to normal, Felix looks pleased for a moment, trying to move the metal
 body once more. The refuel was much too late unfortunately, as the body
@@ -63,7 +66,7 @@ in his tank is filled with gold coins.
 Looks like Felix paid for his drinks after all.
 <changeScene=Day 5>
 <\BUBBLE>Serve Incorrect 7
-You move forward to pour the drink into Felix's Tank. After dissolving for a
+<pauseDialouge> <toggleHide> You move forward to pour the drink into Felix's Tank. After dissolving for a
 second within the tank, Felix looks at you with a disapointed look. You surmise
 you must have messed up the drink in some regards.
 Felix produces his wrench once more and smacks a large red button within his

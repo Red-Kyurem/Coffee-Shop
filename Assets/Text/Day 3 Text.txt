@@ -81,8 +81,7 @@ Regaining your balance, you find the dog nowhere to be seen.
 <\BUBBLE>"Proceed"
 You feel like you've met this individual before but you can't seem to remember
 where.
-<name = "???">"Hiya, could I get a Latte? You can put the name "Cien" on the
-cup."
+<name = "???">"Hiya, could I get a @Blonde@ Latte with @Vanilla@ syrup? You can put the name "Cien" on the cup."
 <name = ""> You begin to make the latte, but before you actually get to add any
 ingredients, Cien stops you.
 <name = "Cien"> "Could the latte leave out anything with THIS letter in them?
@@ -91,8 +90,7 @@ Sorry, it's just a personal preference."
 hastlily on it. Weird. Alright, so that rules out using Milk, and Dark Roast.
 How you're meant to make a latte without milk is definitely difficult, but not
 the most outlandish order you've recieved.
-As you begin to prepare the drink, you notice Cien staring intently at you.
-<choice>
+As you begin to prepare the drink, you notice Cien staring intently at you. <choice> 
 [["Is something the matter?" |<\BUBBLE>"Is something the matter?"]]
 [["Have we met before?" |<\BUBBLE>"Have we met before?"]]
 <\BUBBLE>"Is something the matter?"
@@ -121,11 +119,15 @@ the floor. One thing lead to another and I barely escaped with my life."
 "That incident could only be attributed to things starting with THAT letter,
 hence the distaste."
 <name = ""> Gotta love the random infodump by some random stranger.
-<name = "Cien"> "Oh yeah hows my order coming along?"
+<name = "Cien"> "Oh yeah how's my order coming along?"
+<pauseDialouge> <toggleHide> 
+//
+//
+//
 [[Serve Correct 4|<\BUBBLE>Serve Correct 4]]
 [[Serve Incorrect 4|<\BUBBLE>Serve Incorrect 4]]
 <\BUBBLE>Serve Correct 4
-<name = ""> You hand Cien the Latte, to which he takes a second to look at it
+<toggleHide> <pauseDialouge> <name = ""> You hand Cien the Latte, to which he takes a second to look at it
 before taking a sip.
 <name = "Cien"> "Cool, thanks!"
 <name = ""> Cien hands you the money for the drink before leaving the cafe. Upon
@@ -134,8 +136,7 @@ People don't generally tend to do that, but hey at least he actually paid you.
 <changeScene=Night 3>
 //
 <\BUBBLE>Serve Incorrect 4
-<name = "">
-Cien takes the drink, examining it close before taking a sip. His disgust is
+<toggleHide> <pauseDialouge> <name = ""> Cien takes the drink, examining it close before taking a sip. His disgust is
 visible but he tries to hide it.
 <name = "Cien"> "This is definitely...something. Did you by any chance use an
 ingredient that had THAT letter in it?"

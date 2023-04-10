@@ -25,10 +25,12 @@ designer wasn't sure how else to end the game.
 You decide you're gonna make yourself a coffee before you go.
 Let's see. The nightime atmosphere reminds you of Dark Roast, and the moon of
 milk, so let's make a Dark Roast blend with mocha and 2% Milk.
+<pauseDialouge> <toggleHide> 
+//
 [[Serve Correct FINAL|<\BUBBLE>Serve Correct FINAL]]
 [[Serve Incorrect FINAL|<\BUBBLE>Serve Incorrect FINAL]]
 <\BUBBLE>Serve Correct FINAL
-You construct your coffee and take a sip.
+<pauseDialouge> <toggleHide> You construct your coffee and take a sip.
 It's pretty good.
 You finish the coffee and head over to the door, flipping the sign over one
 final time.
@@ -36,8 +38,7 @@ You get on your sky scooter, and begin the long drive back home looking back one
 final time...
 <changeScene=The End>
 <\BUBBLE>Serve Incorrect FINAL
-You taste the coffee you made for yourself and have to stop yourself from
-gagging.
+<pauseDialouge> <toggleHide> You taste the coffee you made for yourself and have to stop yourself from gagging.
 Ain't that poetic that the final coffee at his shop wasn't even made right?
 Regardless, you feel you'll finish the cup anyways.
 You head over to the door, flipping the sign over one final time.
