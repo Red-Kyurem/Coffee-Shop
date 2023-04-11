@@ -89,7 +89,6 @@ public class dialouge_TEST : MonoBehaviour
         {
             string timeStamp = timeElapsed.ToString();
 
-
             // ADD TELEMETRY HERE (Dialouge)
             var data = new TelemetryStructs.dialougeData()
             {
@@ -98,8 +97,42 @@ public class dialouge_TEST : MonoBehaviour
                 choiceName = chosenChoiceName,
                 timeStamp = timeStamp
             };
-
             TelemetryLogger.Log(this, "Dialouge", data);
+
+            // if in dialouge
+            if (PickupManager.GetComponent<MousePickup>().canPickUp == false)
+            {
+                Vector3 MouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+
+                // ADD TELEMETRY HERE (Dialouge Clicks)
+                var dataDialouge = new TelemetryStructs.dialougeClicksData()
+                {
+                    hasDialougeAdvanced = (isSentenceFilledIn && isChoiceAnswered),
+                    positionInScreenSpace = Input.mousePosition,
+                    positionInWorldSpace = MouseWorldPosition,
+                    choiceName = chosenChoiceName,
+                    timeStamp = timeStamp
+                };
+                TelemetryLogger.Log(this, "Dialouge Click", dataDialouge);
+            }
+            // if in gameplay
+            else
+            {
+                Vector3 MouseWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+
+                // ADD TELEMETRY HERE (Gameplay Clicks)
+                var dataGameplay = new TelemetryStructs.dialougeClicksData()
+                {
+                    hasDialougeAdvanced = (isSentenceFilledIn && isChoiceAnswered),
+                    positionInScreenSpace = Input.mousePosition,
+                    positionInWorldSpace = MouseWorldPosition,
+                    choiceName = chosenChoiceName,
+                    timeStamp = timeStamp
+                };
+                TelemetryLogger.Log(this, "Gameplay Click", dataGameplay);
+            }
+
+            
 
             chosenChoiceName = "N/A";
             

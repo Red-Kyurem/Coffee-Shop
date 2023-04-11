@@ -14,6 +14,26 @@ public class TelemetryStructs : MonoBehaviour
     }
 
     [System.Serializable]
+    public struct dialougeClicksData
+    {
+        public bool hasDialougeAdvanced;
+        public Vector2 positionInScreenSpace;
+        public Vector3 positionInWorldSpace;
+        public string choiceName;
+        public string timeStamp;
+    }
+
+    [System.Serializable]
+    public struct gameplayClicksData
+    {
+        public bool hasDialougeAdvanced;
+        public Vector2 positionInScreenSpace;
+        public Vector3 positionInWorldSpace;
+        public string choiceName;
+        public string timeStamp;
+    }
+
+    [System.Serializable]
     public struct objectClickedOnData
     {
         public string ObjectName;
